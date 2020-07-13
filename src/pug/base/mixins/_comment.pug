@@ -1,0 +1,10 @@
+//- Comment Line Mixin
+mixin c (comment)
+	- if (isThemeforestTheme) {
+		- if (isProduction) {
+			<!-- #{comment} -->
+		- }
+	- } else {
+		<!-- #{comment} -->
+	- }
+
