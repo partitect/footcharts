@@ -1,15 +1,15 @@
 {
-	"name": "front-end-starter-kit-with-gulp",
-	"version": "2.0.0",
-	"description": "Frontend Starter Kit with Gulp for either Themeforest Projects or customizable projects.",
-	"homepage": "https://www.yasinates.com",
+	"name": "footcharts",
+	"version": "1.0.0",
+	"description": "Football Charts and Graphics",
+	"homepage": "https://yellowred.info",
 	"main": "gulpfile.js",
 	"scripts": {
 		"start": "gulp"
 	},
 	"bugs": {
-		"email": "yasinatesim@gmail.com",
-		"url": "https://github.com/yasinatesim/Front-End-Starter-Kit-with-Gulp/issues"
+		"email": "hel@yellowred.info",
+		"url": "https://github.com/partitect/footcharts/issues"
 	},
 	"keywords": [
 		"gulp",
@@ -35,18 +35,18 @@
 	],
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/yasinatesim/Front-End-Starter-Kit-with-Gulp"
+		"url": "https://github.com/partitect/footcharts"
 	},
 	"author": {
-		"name": "Yasin ATEŞ",
-		"email": "yasinatesim@gmail.com",
-		"url": "https://www.yasinates.com"
+		"name": "YellowRed",
+		"email": "help@yellowred.info",
+		"url": "https://yellowred.info"
 	},
-	"license": "MIT",
+	"license": "ISC",
 	"browserslist": [
 		"last 2 version"
 	],
-	"documentation": "http://onlinedocs.com/themename",
+	"documentation": "https://github.com/partitect/footcharts/readme.md",
 	"purchase": "theme-themeforest-url",
 	"devDependencies": {
 		"browser-sync": "^2.26.5",
