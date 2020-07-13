@@ -1,0 +1,109 @@
+// Blueprint header
+header.bp-header.cf
+	.dummy-logo
+		.dummy-icon.foodicon.foodicon--coconut
+			img(src="./assets/img/sample/svg/soccer-field.svg")
+		h2.dummy-heading Fooganic
+button.action.action--open(aria-label='Open Menu')
+	span.icon.icon--menu
+nav#ml-menu.menu
+	button.action.action--close(aria-label='Close Menu')
+		span.icon.icon--cross
+	.menu__wrap
+		ul.menu__level(data-menu='main', tabindex='-1', role='menu', aria-label='All')
+			li.menu__item(role='menuitem')
+				a.menu__link(data-submenu='submenu-1', aria-owns='submenu-1', href='#') Vegetables
+			li.menu__item(role='menuitem')
+				a.menu__link(data-submenu='submenu-2', aria-owns='submenu-2', href='#') Fruits
+			li.menu__item(role='menuitem')
+				a.menu__link(data-submenu='submenu-3', aria-owns='submenu-3', href='#') Grains
+			li.menu__item(role='menuitem')
+				a.menu__link(data-submenu='submenu-4', aria-owns='submenu-4', href='#') Mylk & Drinks
+		// Submenu 1
+		ul#submenu-1.menu__level(data-menu='submenu-1', tabindex='-1', role='menu', aria-label='Vegetables')
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Stalk Vegetables
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Roots & Seeds
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Cabbages
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Salad Greens
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Mushrooms
+			li.menu__item(role='menuitem')
+				a.menu__link(data-submenu='submenu-1-1', aria-owns='submenu-1-1', href='#') Sale %
+		// Submenu 1-1
+		ul#submenu-1-1.menu__level(data-menu='submenu-1-1', tabindex='-1', role='menu', aria-label='Sale %')
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Fair Trade Roots
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Dried Veggies
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Our Brand
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Homemade
+		// Submenu 2
+		ul#submenu-2.menu__level(data-menu='submenu-2', tabindex='-1', role='menu', aria-label='Fruits')
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Citrus Fruits
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Berries
+			li.menu__item(role='menuitem')
+				a.menu__link(data-submenu='submenu-2-1', aria-owns='submenu-2-1', href='#') Special Selection
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Tropical Fruits
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Melons
+		// Submenu 2-1
+		ul#submenu-2-1.menu__level(data-menu='submenu-2-1', tabindex='-1', role='menu', aria-label='Special Selection')
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Exotic Mixes
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Wild Pick
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Vitamin Boosters
+		// Submenu 3
+		ul#submenu-3.menu__level(data-menu='submenu-3', tabindex='-1', role='menu', aria-label='Grains')
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Buckwheat
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Millet
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Quinoa
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Wild Rice
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Durum Wheat
+			li.menu__item(role='menuitem')
+				a.menu__link(data-submenu='submenu-3-1', aria-owns='submenu-3-1', href='#') Promo Packs
+		// Submenu 3-1
+		ul#submenu-3-1.menu__level(data-menu='submenu-3-1', tabindex='-1', role='menu', aria-label='Promo Packs')
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Starter Kit
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') The Essential 8
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Bolivian Secrets
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Flour Packs
+		// Submenu 4
+		ul#submenu-4.menu__level(data-menu='submenu-4', tabindex='-1', role='menu', aria-label='Mylk & Drinks')
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Grain Mylks
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Seed Mylks
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Nut Mylks
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Nutri Drinks
+			li.menu__item(role='menuitem')
+				a.menu__link(data-submenu='submenu-4-1', aria-owns='submenu-4-1', href='#') Selection
+		// Submenu 4-1
+		ul#submenu-4-1.menu__level(data-menu='submenu-4-1', tabindex='-1', role='menu', aria-label='Selection')
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Nut Mylk Packs
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Amino Acid Heaven
+			li.menu__item(role='menuitem')
+				a.menu__link(href='#') Allergy Free

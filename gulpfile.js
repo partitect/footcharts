@@ -57,7 +57,7 @@ const src = {
 	stylesColors: `${srcRoot}/sass/themes`,
 	stylesVendors: `${srcRoot}/sass/vendors`,
 	scripts: `${srcRoot}/js`,
-	scriptsVendors: `${srcRoot}/js/vendors`,
+	scriptsVendors: `${srcRoot}/js/vendors/**/*`,
 	images: `${srcRoot}/img`
 };
 
@@ -75,7 +75,7 @@ const dist = {
 		: `${tmpRoot}/assets/css/vendors`,
 	scripts: isProduction ? `${distRoot}/assets/js` : `${tmpRoot}/assets/js`,
 	scriptsVendors: isProduction
-		? `${distRoot}/assets/js/vendors`
+		? `${distRoot}/assets/js/vendors/**/*`
 		: `${tmpRoot}/assets/js/vendors`,
 	images: isProduction ? `${distRoot}/assets/img` : `${tmpRoot}/assets/img`
 };
@@ -311,7 +311,7 @@ gulp.task("images", () => {
 	if (isThemeforestTheme) {
 		stream = gulp
 			.src(
-				!isProduction ? `${src.images}/sample/**/*` : `${src.images}/prod/**/*`
+				!isProduction ? `${src.images}/sample/**/**/*` : `${src.images}/prod/**/**/*`
 			)
 			.pipe($.newer(!isProduction ? `${dist.images}/sample` : `${dist.images}`))
 			.pipe(

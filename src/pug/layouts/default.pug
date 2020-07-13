@@ -55,24 +55,24 @@ html(lang=siteLanguage)
 
 		+line
 		+line
+		.container
+			include ../partials/_sidebar
 
-		include ../partials/_sidebar
+			+line
+			+line
+			.content
+				block content
 
-		+line
-		+line
+			+line
+			+line
 
-		block content
+			include ../partials/_footer
 
-		+line
-		+line
+			+line
+			+line
 
-		include ../partials/_footer
-
-		+line
-		+line
-
-		//- - if (page !== 'login' && page !== 'register' && page !== 'forgot-password'  && page !== '404') {
-		//- 	include footer
-		//- - }
+			//- - if (page !== 'login' && page !== 'register' && page !== 'forgot-password'  && page !== '404') {
+			//- 	include footer
+			//- - }
 
 		include ../partials/includes/_scripts
