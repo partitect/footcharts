@@ -4,10 +4,10 @@
 		margin: 0;
 		border-radius: 0;
 		border: 0;
-		-webkit-box-shadow: 0 0 1px 0 rgba(154, 161, 171, 0.7);
-		box-shadow: 0 0 1px 0 rgba(154, 161, 171, 0.7);
+        box-shadow:none;
 		z-index: 999999999;
 		font-family: 'Cuprum', sans-serif;
+        background:#5f4dee;
 		.ui.dropdown {
 			.menu {
 				box-shadow: none;
@@ -45,7 +45,7 @@
 		.item {
 			border-radius: 0 !important;
 			border: 0;
-
+            color:#fff;
 			border-bottom: 2px solid transparent;
 
 			i.dropdown.icon {
@@ -57,7 +57,7 @@
 
 			&.hover-item {
 				transition: all 0.3s ease-out;
-
+                color:#eee;
 				&:hover {
 					border-bottom: 2px solid #ff2882;
 				}

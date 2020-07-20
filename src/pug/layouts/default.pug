@@ -57,7 +57,8 @@ html(lang=siteLanguage)
 		+line
 		+line
 		.page-body-wrapper
-			include ../partials/_sidebar
+			if(page!=='index')
+				include ../partials/_sidebar
 			.main-content
 				include ../partials/_navbar
 				.content-wrapper
