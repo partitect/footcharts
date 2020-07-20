@@ -54,12 +54,14 @@ html(lang=siteLanguage)
 		+line
 		+line
 
-		include ../partials/_sidebar
-
 		+line
 		+line
-
-		block content
+		.page-body-wrapper
+			include ../partials/_sidebar
+			.main-content
+				include ../partials/_navbar
+				.content-wrapper
+					block content
 
 		+line
 		+line

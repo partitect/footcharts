@@ -1,0 +1,47 @@
+include ./includes/_menu
+aside
+	nav.sidebar-nav.collapse
+		.sidebar-header
+			h4 FootCharts
+		ul#menu1.metismenu
+			each menu1 in menu
+				if (menu1.child.length>0)
+					li
+						a.has-arrow(href="#" aria-expanded="false")
+							i.iconfont(class=menu1.icon)
+							span #{menu1.text}
+						each menu2 in menu1.child
+							ul
+								if menu2.child
+									li
+										a.has-arrow(href="#" aria-expanded="false")
+											span #{menu2.text}
+										each menu3 in menu2.child
+											ul
+												if menu3.child
+													li
+														a.s.has-arrow(href="#" aria-expanded="false")
+															span #{menu3.text}
+														each menu4 in menu3.child
+															ul
+																if menu4.child
+																	li
+																		a(href="#" aria-expanded="false")
+																			span #{menu4.text}
+																else
+																	li
+																		a.animsition-link(href=""+menu4.link+"")
+																			span #{menu4.text}
+												else
+													li
+														a.animsition-link(href=""+menu3.link+"")
+															span #{menu3.text}
+								else
+									li
+										a.animsition-link(href=""+menu2.link+"")
+											span #{menu2.text}
+				else
+					li
+						a.animsition-link(href=""+menu1.link+"")
+							i.iconfont(class=menu1.icon)
+							span #{menu1.text}
