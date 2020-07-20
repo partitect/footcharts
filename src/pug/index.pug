@@ -1,10 +1,117 @@
-extends layouts/default
-block pageVars
-	- var page = "index"
-	//- - var pageTitle = "Homepage"
-block content
-	.page-container
-		.card
-			a Themeforest Template
-			p Themeforest Template
+html
+	head
+		link(href='assets/vendors/bootstrap/dist/css/bootstrap.min.css', rel='stylesheet')
+		link(href='assets/vendors/font-awesome/css/all.min.css', rel='stylesheet')
+		link(href='assets/vendors/swiper/dist/css/swiper.min.css', rel='stylesheet')
+		link(href='assets/vendors/magnific-popup/dist/magnific-popup.css', rel='stylesheet')
+		link(href='assets/css/landing.min.css', rel='stylesheet')
+	body(data-spy='scroll', data-target='.fixed-top')
+		include ./landing/partials/_navbar
+		include ./landing/partials/_header
+		.slider-1
+			.container
+				.row
+					.col-lg-12
+						// Image Slider
+						.slider-container
+							.swiper-container.image-slider
+								.swiper-wrapper
+									.swiper-slide
+										img.img-fluid(src='images/customer-logo-1.png', alt='alternative')
+									.swiper-slide
+										img.img-fluid(src='images/customer-logo-2.png', alt='alternative')
+									.swiper-slide
+										img.img-fluid(src='images/customer-logo-3.png', alt='alternative')
+									.swiper-slide
+										img.img-fluid(src='images/customer-logo-4.png', alt='alternative')
+									.swiper-slide
+										img.img-fluid(src='images/customer-logo-5.png', alt='alternative')
+									.swiper-slide
+										img.img-fluid(src='images/customer-logo-6.png', alt='alternative')
+		// Description
+		.cards-1
+			.container
+				.row
+					.col-lg-12
+						.above-heading DESCRIPTION
+						h2.h2-heading Marketing Automation Will Bring More Qualified Leads
+						.row
+							.col-lg-12
+								.row
+									.col-lg-4
+										.card
+											.card-image
+												img.img-fluid(src='assets/img/sample/ex-1.png', alt='alternative')
+											.card-body
+												h4.card-title Pass Map
+												p
+													| Single Player Pass Direction Map
+									.col-lg-4
+										.card
+											.card-image
+												img.img-fluid(src='assets/img/sample/ex-6.png', alt='alternative')
+											.card-body
+												h4.card-title Players Versus
+												p
+													| Two Players Versus
+									.col-lg-4
+										.card
+											.card-image
+												img.img-fluid(src='assets/img/sample/ex-15.png', alt='alternative')
+											.card-body
+												h4.card-title Teams Versus
+												p
+													| Two Teams Versus
+		// Footer
+		svg.footer-frame(data-name='Layer 2', xmlns='http://www.w3.org/2000/svg', preserveAspectRatio='none', viewBox='0 0 1920 79')
+			defs
+				style.
+					.cls-2{fill:#5f4def;}
+			title footer-frame
+			path.cls-2(d='M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z', transform='translate(0 -0.188)')
+		.footer
+			.container
+				.row
+					.col-md-4
+						.footer-col.first
+							h4 About Tivo
+							p.p-small
+								| We're passionate about designing and developing one of the best marketing apps in the market
+					// end of col
+					.col-md-4
+						.footer-col.middle
+							h4 Important Links
+							ul.list-unstyled.li-space-lg.p-small
+								li.media
+									i.fas.fa-square
+									.media-body
+										| Our business partners
+										a.white(href='#your-link') startupguide.com
+								li.media
+									i.fas.fa-square
+									.media-body
+										| Read our
+										a.white(href='terms-conditions.html') Terms & Conditions
+										| ,
+										a.white(href='privacy-policy.html') Privacy Policy
+					// end of col
+					.col-md-4
+						.footer-col.last
+							h4 Contact
+							ul.list-unstyled.li-space-lg.p-small
+								li.media
+									i.fas.fa-map-marker-alt
+									.media-body 22 Innovative, San Francisco, CA 94043, US
+								li.media
+									i.fas.fa-envelope
+									.media-body
+										a.white(href='mailto:contact@tivo.com') contact@tivo.com
+										i.fas.fa-globe
+										a.white(href='#your-link') www.tivo.com
 
+		script(src='assets/vendors/jquery/dist/jquery.min.js')
+		script(src='assets/vendors/bootstrap/dist/js/bootstrap.min.js')
+		script(src='assets/vendors/jquery.easing/js/jquery.easing.min.js')
+		script(src='assets/vendors/swiper/dist/js/swiper.min.js')
+		script(src='assets/vendors/magnific-popup/dist/jquery.magnific-popup.min.js')
+		script(src='assets/js/_landings-scripts.min.js')

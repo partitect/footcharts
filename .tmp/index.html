@@ -1,163 +1,195 @@
-<!DOCTYPE html>
-<html lang="en-En">
+<html>
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
-		<title>Footcharts - Football Charts and Graphics</title>
-
-		<meta name="description" content="Interactive Football Charts and Graphics" />
-		<meta name="author" content="Yellowred" />
-		<meta name="classification" content="Soccer,Football,Charts,Graphics,Interactive,Fixture,League,Premier League,Versus,Compare,Ball,Skills,Points,Win,Draw,Lost" />
-		<meta name="copyright" content="20 Temmuz 2020 by YellowRed" />
-		<meta property="og:url" content="https://yellowred.info" />
-		<meta property="og:type" content="website" />
-		<meta property="og:title" content="Footcharts - Football Charts and Graphics" />
-		<meta property="og:description" content="Interactive Football Charts and Graphics" />
-		<meta property="og:image" content="assets/img/prod/logo.svg" />
-		<meta property="og:site_name" content="Footcharts - Football Charts and Graphics" />
-		<meta property="og:locale" content="en-En" />
-		<meta property="article:author" content="Footcharts - Football Charts and Graphics" />
-
-		<!-- Address Bar Color -->
-		<meta name="theme-color" content="#ffffff" />
-
-		<!-- Robots -->
-		<meta name="robots" content="noindex,nofollow" />
-		<meta name="googlebot" content="noindex,nofollow" />
-
-		<!-- Favicons -->
-		<link rel="shortcut icon" href="assets/img/prod/favicons/favicon.svg" type="image/svg+xml" />
-		<link rel="icon" href="assets/img/prod/favicons/favicon.svg" type="image/svg+xml" />
-		<link rel="apple-touch-icon" href="assets/img/prod/favicons/favicon.svg" />
-		<link rel="mask-icon" href="assets/img/prod/favicons/favicon.svg" color="#ffffff" />
-
-		<link rel="canonical" href="https://yellowred.info" />
-		<link type="text/plain" rel="author" href="https://yellowred.info/humans.txt" />
-
-		<!-- Styles -->
-		<link rel="stylesheet" href="assets/vendors/fomantic-ui/dist/semantic.min.css" />
-		<link rel="stylesheet" href="assets/vendors/metisMenu/dist//metisMenu.min.css" />
-		<link rel="stylesheet" href="assets/css/app.min.css" />
+		<link href="assets/vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="assets/vendors/font-awesome/css/all.min.css" rel="stylesheet" />
+		<link href="assets/vendors/swiper/dist/css/swiper.min.css" rel="stylesheet" />
+		<link href="assets/vendors/magnific-popup/dist/magnific-popup.css" rel="stylesheet" />
+		<link href="assets/css/landing.min.css" rel="stylesheet" />
 	</head>
-	<body>
-		<div class="page-body-wrapper">
-			<aside>
-				<nav class="sidebar-nav collapse">
-					<div class="sidebar-header">
-						<h4>FootCharts</h4>
-					</div>
-					<ul class="metismenu" id="menu1">
-						<li>
-							<a class="animsition-link" href="index.html"><i class="iconfont icon-zaocan"></i><span>Home</span></a>
+	<body data-spy="scroll" data-target=".fixed-top">
+		<nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+			<div class="container">
+				<a class="navbar-brand logo-image" href="index.html"><img src="assets/img/prod/logo-white.svg" alt="alternative" /> Footcharts</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-awesome fas fa-bars"></span><span class="navbar-toggler-awesome fas fa-times"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+					<ul class="navbar-nav ml-auto">
+						<li class="nav-item">
+							<a class="nav-link page-scroll" href="#header">HOME<span class="sr-only">(current)</span></a>
 						</li>
-						<li>
-							<a class="has-arrow" href="#" aria-expanded="false"><i class="iconfont icon-zaocan"></i><span>Players</span></a>
-							<ul>
-								<li>
-									<a class="animsition-link" href="players-skilss.html"><span>Players Skills</span></a>
-								</li>
-							</ul>
-							<ul>
-								<li>
-									<a class="animsition-link" href="players-versus.html"><span>Players Versus</span></a>
-								</li>
-							</ul>
-							<ul>
-								<li>
-									<a class="animsition-link" href="players-passes.html"><span>Player Passes</span></a>
-								</li>
-							</ul>
-							<ul>
-								<li>
-									<a class="animsition-link" href="players-compare.html"><span>Players Compare</span></a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a class="has-arrow" href="#" aria-expanded="false"><i class="iconfont icon-zaocan"></i><span>Teams</span></a>
-							<ul>
-								<li>
-									<a class="animsition-link" href="team-passes.html"><span>Team Passes</span></a>
-								</li>
-							</ul>
-							<ul>
-								<li>
-									<a class="animsition-link" href="teams-compare.html"><span>Teams Compare</span></a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a class="has-arrow" href="#" aria-expanded="false"><i class="iconfont icon-zaocan"></i><span>Leagues</span></a>
-							<ul>
-								<li>
-									<a class="animsition-link" href="fixture.html"><span>Fixture</span></a>
-								</li>
-							</ul>
-							<ul>
-								<li>
-									<a class="animsition-link" href="league-table.html"><span>League Table</span></a>
-								</li>
-							</ul>
-						</li>
-						<li>
-							<a class="animsition-link" href="change-log.html"><i class="iconfont icon-jinnang"></i><span>Change Log</span></a>
-						</li>
-						<li>
-							<a class="animsition-link" href="./assets/docs"><i class="iconfont icon-zaocan"></i><span>Docs</span></a>
-						</li>
+						<li class="nav-item"><a class="nav-link page-scroll" href="#features">FEATURES</a></li>
+						<li class="nav-item"><a class="nav-link page-scroll" href="#pricing">BUY NOW</a></li>
 					</ul>
-				</nav>
-			</aside>
-			<div class="main-content">
-				<div class="ui top fixed menu borderless nav-menu">
-					<a class="item" href="index.html"
-						><img src="assets/img/prod/logo.svg" />
-						<h4>FootCharts</h4></a
-					><a class="toc item toggle-sidebar"><i class="icon big iconfont icon-xitongcaidan"></i></a><a class="item hover-item" href="index.html">Home</a>
-					<div class="ui dropdown link item hover-item">
-						Players<i class="dropdown icon"></i>
-						<div class="menu"><a class="item" href="players-skilss.html">Players Skills</a><a class="item" href="players-versus.html">Players Versus</a><a class="item" href="players-passes.html">Player Passes</a><a class="item" href="players-compare.html">Players Compare</a></div>
-					</div>
-					<div class="ui dropdown link item hover-item">
-						Teams<i class="dropdown icon"></i>
-						<div class="menu"><a class="item" href="team-passes.html">Team Passes</a><a class="item" href="teams-compare.html">Teams Compare</a></div>
-					</div>
-					<div class="ui dropdown link item hover-item">
-						Leagues<i class="dropdown icon"></i>
-						<div class="menu"><a class="item" href="fixture.html">Fixture</a><a class="item" href="league-table.html">League Table</a></div>
-					</div>
-					<a class="item hover-item" href="change-log.html">Change Log</a><a class="item hover-item" href="./assets/docs">Docs</a>
-					<div class="right menu">
-						<div class="item">
-							<div class="theme-switch-wrapper">
-								<label for="theme-btn">
-									<input id="theme-btn" type="checkbox" />
-									<div class="slider-wrapper">
-										<div class="theme-btn-slider"></div>
-										<span class="star star-1"></span><span class="star star-2"></span><span class="star star-3"></span><span class="star star-4"></span><span class="star star-5"></span><span class="star star-6"></span>
-									</div>
-								</label>
+				</div>
+			</div>
+		</nav>
+		<!-- Header-->
+		<header class="header" id="header">
+			<div class="header-content">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-xl-5">
+							<div class="text-container">
+								<h1>Footcharts v1.0.0</h1>
+								<p class="p-large">Interactive Football Charts and Graphics and more...</p>
+								<a class="btn-solid-lg page-scroll" href="home.html">BROWSE NOW</a>
+							</div>
+						</div>
+						<div class="col-lg-6 col-xl-7">
+							<div class="image-container">
+								<div class="img-wrapper"><img class="img-fluid" src="assets/img/sample/ex-3.png" alt="alternative" /></div>
+								<div class="img-wrapper __second"><img class="img-fluid" src="assets/img/sample/ex-4.png" alt="alternative" /></div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="content-wrapper">
-					<div class="page-container">
-						<div class="card">
-							<a>Themeforest Template</a>
-							<p>Themeforest Template</p>
+			</div>
+		</header>
+		<svg class="header-frame" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 310">
+			<defs>
+				<style>
+					.cls-1 {
+						fill: #5f4def;
+					}
+				</style>
+			</defs>
+			<title>header-frame</title>
+			<path
+				class="cls-1"
+				d="M0,283.054c22.75,12.98,53.1,15.2,70.635,14.808,92.115-2.077,238.3-79.9,354.895-79.938,59.97-.019,106.17,18.059,141.58,34,47.778,21.511,47.778,21.511,90,38.938,28.418,11.731,85.344,26.169,152.992,17.971,68.127-8.255,115.933-34.963,166.492-67.393,37.467-24.032,148.6-112.008,171.753-127.963,27.951-19.26,87.771-81.155,180.71-89.341,72.016-6.343,105.479,12.388,157.434,35.467,69.73,30.976,168.93,92.28,256.514,89.405,100.992-3.315,140.276-41.7,177-64.9V0.24H0V283.054Z"
+			></path>
+		</svg>
+		<div class="slider-1">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<!-- Image Slider-->
+						<div class="slider-container">
+							<div class="swiper-container image-slider">
+								<div class="swiper-wrapper">
+									<div class="swiper-slide"><img class="img-fluid" src="images/customer-logo-1.png" alt="alternative" /></div>
+									<div class="swiper-slide"><img class="img-fluid" src="images/customer-logo-2.png" alt="alternative" /></div>
+									<div class="swiper-slide"><img class="img-fluid" src="images/customer-logo-3.png" alt="alternative" /></div>
+									<div class="swiper-slide"><img class="img-fluid" src="images/customer-logo-4.png" alt="alternative" /></div>
+									<div class="swiper-slide"><img class="img-fluid" src="images/customer-logo-5.png" alt="alternative" /></div>
+									<div class="swiper-slide"><img class="img-fluid" src="images/customer-logo-6.png" alt="alternative" /></div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<!-- Scripts -->
+		<!-- Description-->
+		<div class="cards-1">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="above-heading">DESCRIPTION</div>
+						<h2 class="h2-heading">Marketing Automation Will Bring More Qualified Leads</h2>
+						<div class="row">
+							<div class="col-lg-12">
+								<div class="row">
+									<div class="col-lg-4">
+										<div class="card">
+											<div class="card-image"><img class="img-fluid" src="assets/img/sample/ex-1.png" alt="alternative" /></div>
+											<div class="card-body">
+												<h4 class="card-title">Pass Map</h4>
+												<p>Single Player Pass Direction Map</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="card">
+											<div class="card-image"><img class="img-fluid" src="assets/img/sample/ex-6.png" alt="alternative" /></div>
+											<div class="card-body">
+												<h4 class="card-title">Players Versus</h4>
+												<p>Two Players Versus</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4">
+										<div class="card">
+											<div class="card-image"><img class="img-fluid" src="assets/img/sample/ex-15.png" alt="alternative" /></div>
+											<div class="card-body">
+												<h4 class="card-title">Teams Versus</h4>
+												<p>Two Teams Versus</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Footer-->
+		<svg class="footer-frame" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 79">
+			<defs>
+				<style>
+					.cls-2 {
+						fill: #5f4def;
+					}
+				</style>
+			</defs>
+			<title>footer-frame</title>
+			<path
+				class="cls-2"
+				d="M0,72.427C143,12.138,255.5,4.577,328.644,7.943c147.721,6.8,183.881,60.242,320.83,53.737,143-6.793,167.826-68.128,293-60.9,109.095,6.3,115.68,54.364,225.251,57.319,113.58,3.064,138.8-47.711,251.189-41.8,104.012,5.474,109.713,50.4,197.369,46.572,89.549-3.91,124.375-52.563,227.622-50.155A338.646,338.646,0,0,1,1920,23.467V79.75H0V72.427Z"
+				transform="translate(0 -0.188)"
+			></path>
+		</svg>
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="footer-col first">
+							<h4>About Tivo</h4>
+							<p class="p-small">We're passionate about designing and developing one of the best marketing apps in the market</p>
+						</div>
+					</div>
+					<!-- end of col-->
+					<div class="col-md-4">
+						<div class="footer-col middle">
+							<h4>Important Links</h4>
+							<ul class="list-unstyled li-space-lg p-small">
+								<li class="media">
+									<i class="fas fa-square"></i>
+									<div class="media-body">Our business partners<a class="white" href="#your-link">startupguide.com</a></div>
+								</li>
+								<li class="media">
+									<i class="fas fa-square"></i>
+									<div class="media-body">Read our<a class="white" href="terms-conditions.html">Terms & Conditions</a>,<a class="white" href="privacy-policy.html">Privacy Policy</a></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- end of col-->
+					<div class="col-md-4">
+						<div class="footer-col last">
+							<h4>Contact</h4>
+							<ul class="list-unstyled li-space-lg p-small">
+								<li class="media">
+									<i class="fas fa-map-marker-alt"></i>
+									<div class="media-body">22 Innovative, San Francisco, CA 94043, US</div>
+								</li>
+								<li class="media">
+									<i class="fas fa-envelope"></i>
+									<div class="media-body"><a class="white" href="mailto:contact@tivo.com">contact@tivo.com</a><i class="fas fa-globe"></i><a class="white" href="#your-link">www.tivo.com</a></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 		<script src="assets/vendors/jquery/dist/jquery.min.js"></script>
-		<script src="assets/vendors/fomantic-ui/dist/semantic.min.js"></script>
-		<script src="assets/vendors/metisMenu/dist/metisMenu.min.js"></script>
-		<script src="assets/js/app.min.js"></script>
+		<script src="assets/vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script src="assets/vendors/jquery.easing/js/jquery.easing.min.js"></script>
+		<script src="assets/vendors/swiper/dist/js/swiper.min.js"></script>
+		<script src="assets/vendors/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+		<script src="assets/js/_landings-scripts.min.js"></script>
 	</body>
 </html>
