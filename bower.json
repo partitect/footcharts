@@ -1,0 +1,40 @@
+{
+	"name": "themeforest-starter-template",
+	"description": "Frontend Starter Kit with Gulp for either Themeforest Projects or customizable projects.",
+	"main": "gulpfile.js",
+	"authors": ["Telat Kaya"],
+	"license": "MIT",
+	"keywords": [
+		"gulp",
+		"pug",
+		"sass",
+		"scss",
+		"babel",
+		"es6",
+		"ecmascript6",
+		"es6-javascript",
+		"preprocessor",
+		"frontend",
+		"front-end",
+		"front-end-development",
+		"front-end-webdevelopment",
+		"optimize",
+		"minify",
+		"theme",
+		"theme-development",
+		"theme",
+		"themeforest",
+		"starter-kit"
+	],
+	"homepage": "https://github.com/partitect/ThemeForest-Starter-Template",
+	"private": true,
+	"ignore": ["**/.*", "node_modules", "bower_components", "test", "tests"],
+	"dependencies": {
+		"jquery": "^3.4.1"
+	},
+	"overrides": {
+		"jquery": {
+			"main": ["./dist/jquery.min.js"]
+		}
+	}
+}

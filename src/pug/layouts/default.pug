@@ -1,0 +1,76 @@
+include ../base/_variables
+include ../base/_mixins
+
+- if(isThemeforestTheme) {
+	- if (!isProduction) {
+	//
+		=============================================================================
+
+			* This is a premium product available exclusively at sitename.net
+			* The demo files are minified/crypted for copyright reasons,
+			* you will find them, expanded, well commented and
+			* coded accurately in your download pack.
+
+		=============================================================================
+	="\n"
+	- } else {
+	//
+		Template;
+				* Name          : themeName
+				* Created Date  : themeDate
+				* Version       : themeVersion
+		Author;
+				* Email         : help@yellowred.info
+				* Web Site      : https://yellowred.info
+		============================================================================================
+						Copyright (c) 2020 - yellowRed - https://themeforest.net/user/yellowred
+		============================================================================================
+	- }
+- }
+
+<!DOCTYPE html>
+html(lang=siteLanguage)
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		+line
+		+line
+
+		title=(pageTitle ? pageTitle + ' - ' + siteTitle:siteTitle)
+
+		include ../partials/includes/_meta-tags
+		include ../partials/includes/_styles
+	body
+
+		//- - if (page !== 'login' && page !== 'register' && page !== 'forgot-password'  && page !== '404') {
+		//- 	include header
+		//- 	include sidebar
+		//- - }
+
+		include ../partials/_header
+
+		+line
+		+line
+
+		include ../partials/_sidebar
+
+		+line
+		+line
+
+		block content
+
+		+line
+		+line
+
+		include ../partials/_footer
+
+		+line
+		+line
+
+		//- - if (page !== 'login' && page !== 'register' && page !== 'forgot-password'  && page !== '404') {
+		//- 	include footer
+		//- - }
+
+		include ../partials/includes/_scripts

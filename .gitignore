@@ -1,0 +1,9 @@
+node_modules
+bower_components
+package-*.json
+.idea
+.tmp
+dist
+.DS_Store
+*.zip
+themeforest-starter-template-v1.0.0

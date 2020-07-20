@@ -1,0 +1,14 @@
+//- Add .min suffix Mixins
+mixin link(source,vendors)
+	- vendors = vendors || false
+	link(rel="stylesheet" href="assets/css/" + (vendors ? 'vendors/' + source: source) + (!isProduction ? ".min" : "") + ".css")
+
+mixin script(source,vendors)
+	- vendors = vendors || false
+	script(src="assets/js/" + (vendors ? 'vendors/' + source: source) + (!isProduction ? ".min" : "") + ".js")
+
+mixin vendorlink(source,path,minify)
+	link(rel="stylesheet" href="assets/" + ('vendors/' + path +'/'+ source) + (minify ? ".min" : "") + ".css")
+
+mixin vendorscript(source,path,minify)
+	script(src="assets/" + ('vendors/' + path +'/'+ source) + (minify ? ".min" : "") + ".js")
