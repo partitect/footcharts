@@ -1,7 +1,0 @@
-node_modules
-package-*.json
-.idea
-.tmp
-dist
-.DS_Store
-*.zip
