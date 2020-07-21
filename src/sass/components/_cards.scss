@@ -1,0 +1,13 @@
+.ui.cards{
+	.card{
+		border:0;
+		box-shadow: none;
+		.image{
+			img{
+				border-top-right-radius: 3px;
+				border-top-left-radius: 3px;
+
+			}
+		}
+	}
+}

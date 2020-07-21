@@ -6,4 +6,6 @@ $(document).ready(function() {
 	// =require components/_charts-resize.js
 	// =require components/_toggle-sidebar.js
 	// =require components/_navbar.js
+	// =require components/_cards.js
+
 });
