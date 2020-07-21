@@ -4,12 +4,10 @@
 </div>
 
 # FOOTCHARTS
-## V1.0.0
 
 > INTERACTIVE FOTTBALL CHARTS AND GRAPHICS
 
-[Home](https://karatekin.edu.tr)
-[Rehber](https://rehber.karatekin.edu.tr)
-
+[Home](../index.html ':ignore')
+[Get Started](/get-started)
 
 ![color](#eb0)

@@ -3,6 +3,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<title>Footcharts Documentation</title>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta name="viewport" content="width=device-width,initial-scale=1" />
 		<meta charset="UTF-8" />
@@ -62,28 +63,30 @@
 			section.cover p {
 				color: #403f4c;
 			}
-			.cover-image-wrapper{
+			.cover-image-wrapper {
 				position: relative;
-				width: 860px;
-				height: 450px;
-				text-align: center;
+				width: 50%;
+				height: 350px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
 			}
-			.cover-image-wrapper img{
+			.cover-image-wrapper img {
 				position: absolute;
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
 				text-align: center;
-				left:50%
+				left: 50%;
 			}
-			.cover-image-wrapper img:first-child{
-				transform: rotate(-8deg);
+			.cover-image-wrapper img:first-child {
+				transform: rotate(-5deg);
 			}
-			.cover-image-wrapper img:nth-child(2){
-				transform: rotate(8deg);
+			.cover-image-wrapper img:nth-child(2) {
+				transform: rotate(5deg);
 			}
-			h1#footcharts{
-				margin-top: 50px;
+			.sidebar img {
+				height: 100px;
 			}
 		</style>
 	</head>
@@ -98,10 +101,12 @@
 				loadSidebar: true,
 				name: 'Footcharts',
 				basePath: '/docs/',
+				externalLinkTarget: '_self',
+				logo: '../assets/img/prod/logo-white.svg',
 				search: {
 					paths: 'auto',
-					placeholder: 'Aranacak Kelimeyi Girin 🔍',
-					noData: 'Sonuç Yok! 😞'
+					placeholder: 'Type for search 🔍',
+					noData: 'No Result! 😞'
 				}
 			};
 		</script>
