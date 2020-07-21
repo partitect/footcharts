@@ -1,0 +1,34 @@
+{
+	"RECORDS": [
+			{
+					"id": "1",
+					"league": "Premier League",
+					"logo": "premier-league"
+			},
+			{
+					"id": "2",
+					"league": "La Liga",
+					"logo": "laliga"
+			},
+			{
+					"id": "3",
+					"league": "Bundesliga",
+					"logo": "bundesliga"
+			},
+			{
+					"id": "4",
+					"league": "Serie A",
+					"logo": "seriea"
+			},
+			{
+					"id": "5",
+					"league": "League 1",
+					"logo": "league1"
+			},
+			{
+					"id": "6",
+					"league": "Super League",
+					"logo": "super-league"
+			}
+	]
+}

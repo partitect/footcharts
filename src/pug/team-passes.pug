@@ -1,0 +1,13 @@
+extends layouts/default
+block pageVars
+	- var page = "playerSkills"
+	- var pageTitle = "Player Skills"
+block content
+	.ui.equal.width.stackable.grid
+		.row
+			.sixteen.mobile.column
+				.ui.segment.attached
+					#teamPasses.chartli(style="height:2100px")
+block extraScripts
+	+script('charts/_team-passes',true)
+

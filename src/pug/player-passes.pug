@@ -1,0 +1,29 @@
+extends layouts/default
+block pageVars
+	- var page = "playerSkills"
+	- var pageTitle = "Player Skills"
+block content
+	.ui.stackable.grid
+		.stretched.row
+			.three.wide.column
+				.ui.segment
+					.ui.form
+						.field
+							.ui.search.selection.dropdown.chart-dd.pl1
+								input(type='hidden')
+								i.dropdown.icon
+								input.search(type='text')
+								.default.text Harry Kane
+								.menu
+						.field
+							.ui.search.selection.dropdown.chart-dd.color
+								input(type='hidden', name='color')
+								i.dropdown.icon
+								.default.text Select Color
+								.menu
+			.thirteen.wide.column
+				.ui.segment
+					#p_passes.chartli(style="height:720px")
+block extraScripts
+	+script('charts/_player-passes',true)
+

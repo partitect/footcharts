@@ -1,0 +1,146 @@
+using HtmlAgilityPack;
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Linq;
+using System.Net;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+public partial class Default3 : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        DataTable getTeam = Db.DataTableGetir(@"SELECT
+	                                            t.id,
+	                                            t.league_id,
+	                                            t.team,
+	                                            t.link_key,
+	                                            t.link_id 
+                                            FROM
+	                                            dbo.teams t where league_id = '6'");
+        for (int i = 0; i < getTeam.Rows.Count; i++)
+        {
+            GetWeeks(getTeam.Rows[i]["link_key"].ToString(), getTeam.Rows[i]["link_id"].ToString(), getTeam.Rows[i]["league_id"].ToString(), getTeam.Rows[i]["id"].ToString());
+        }
+
+    }
+    public static void GetWeeks(string team, string id,string league_id, string team_id)
+    {
+        System.Web.Script.Serialization.JavaScriptSerializer serializer = new System.Web.Script.Serialization.JavaScriptSerializer();
+        List<Dictionary<string, object>> rows = new List<Dictionary<string, object>>();
+        Dictionary<string, object> row;
+
+        int counter = 0;
+
+        Uri url = new Uri("https://www.sofascore.com/team/football/" + team + "/" + id + "");
+        WebClient client = new WebClient();
+        var html = client.DownloadData(url);
+        var data = Encoding.UTF8.GetString(html);
+        // Adresten istek yapı html kodlarını indiriyoruz.     
+
+        HtmlAgilityPack.HtmlDocument dokuman = new HtmlAgilityPack.HtmlDocument();
+        dokuman.LoadHtml(data);
+        // İndirdiğimiz html kodlarını bir HtmlDocment nesnesine yüklüyoruz.     
+       
+        var table = dokuman.DocumentNode.SelectSingleNode("//*[contains(@class,'squad-container')]");
+        var tableRows = table.SelectNodes(".//div[@class='squad']/a");
+        string player_name = "";
+        string player_number = "";
+        string player_position = "";
+        string player_nation = "";
+        string player_link = "";
+        var regExpr = new Regex("\'.*\'", RegexOptions.IgnoreCase);
+        for (int i = 0; i < tableRows.Count; i++)
+        {
+            var img = tableRows[i].SelectSingleNode(".//div[@class='squad-player__img-wrapper']//img/@src");
+            HtmlAttribute att = tableRows[i].Attributes["href"];
+            player_link = tableRows[i].Attributes["href"].Value; ;
+           
+
+            var pnameWrap = tableRows[i].SelectSingleNode(".//div[@class='squad-player__name']");
+            if (pnameWrap != null)
+            {
+                player_name = tableRows[i].SelectSingleNode(".//div[@class='squad-player__name']").InnerText.Trim();
+                player_name = player_name.Replace("\"", "").Replace("'", "").Replace("\u0026#039;", "").Replace("?","");
+            }
+            else
+            {
+                player_name = "";
+            }
+
+            var pnumberWrap = tableRows[i].SelectSingleNode(".//div[@class='squad-player__img-wrapper']/span");
+            if (pnumberWrap != null)
+            {
+                player_number = tableRows[i].SelectSingleNode(".//div[@class='squad-player__img-wrapper']/span").InnerText.Trim();
+            }
+            else
+            {
+                player_number = "";
+            }
+
+            var ppositionWrap = tableRows[i].SelectSingleNode(".//div[@class='cell__content']/span");
+            if (ppositionWrap != null)
+            {
+                player_position = tableRows[i].SelectSingleNode(".//div[@class='cell__content']/span").InnerText.Trim();
+            }
+            else
+            {
+                player_position = "";
+            }
+
+            var pnationWrap = tableRows[i].SelectSingleNode(".//div[@class='cell__section'][2]");
+            if (pnationWrap != null)
+            {
+                player_nation = tableRows[i].SelectSingleNode(".//div[@class='cell__section'][2]").InnerText.Trim();
+            }
+            else
+            {
+                player_nation = "O-O";
+            }
+            
+            row = new Dictionary<string, object>
+                {
+                    { "id", counter+1 },
+                    { "name", player_name },
+                    { "image", img.GetAttributeValue("src", "nothing")},
+                    { "number",player_number},
+                    { "position",player_position },
+                    { "nation", player_nation},
+                    {"link",player_link }
+                };
+            counter++;
+            rows.Add(row);
+           
+            string[] alanlar = { "player_name", "image","team_id","league_id","position","number","nationality","season_id","link" };
+            string[] veriler = { player_name, img.GetAttributeValue("src", "nothing"),team_id, league_id, player_position, player_number, player_nation,"1",player_link };
+
+            //Db.sqlInsert(alanlar, veriler, "players");
+           
+
+        }
+
+
+        serializer.MaxJsonLength = Int32.MaxValue;
+        Sonuc sonuclar = new Sonuc();
+        sonuclar.total_count = rows.Count;
+       
+        sonuclar.data = rows;
+        //Response.Write(serializer.Serialize(sonuclar));
+
+        HttpContext.Current.Response.Write(serializer.Serialize(sonuclar));
+    }
+
+    public class Sonuc
+    {
+        public int total_count;
+        public List<Dictionary<string, object>> data;
+        public List<Dictionary<string, object>> teams;
+
+    }
+
+
+}

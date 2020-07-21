@@ -1,0 +1,17 @@
+extends layouts/default
+block pageVars
+	- var page = "playerSkills"
+	- var pageTitle = "Player Skills"
+block content
+	.ui.equal.width.stackable.grid
+		.row
+			.sixteen.mobile.column
+				.ui.segment.p-0
+					.card-wrapper
+						.player-card(style="padding-top:50px")
+							#playerSkills.chartli(style="height:700px")
+							a.ui.button.pagination-button.left-button Prev
+							a.ui.button.pagination-button.right-button Next
+block extraScripts
+	+script('charts/_player-skills',true)
+

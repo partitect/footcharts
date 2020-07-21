@@ -1,0 +1,73 @@
+{
+	"dataNames": [
+		{ "text": "Overall", "max": 100 },
+		{ "text": "Dribbling", "max": 100 },
+		{ "text": "Finishing", "max": 100 },
+		{ "text": "Shot Power", "max": 100 },
+		{ "text": "Stamina", "max": 100 },
+		{ "text": "Positioning", "max": 100 }
+	],
+	"colors": [
+		{ "name": "Green", "value": "#3BB273" },
+		{ "name": "Blue", "value": "#4D9DE0" },
+		{ "name": "Orange", "value": "#E56B2D" },
+		{ "name": "Yellow", "value": "#E1BC29" },
+		{ "name": "Purple", "value": "#7768AE" }
+	],
+	"players": [
+		{
+			"name": "L. Sane",
+			"identy": "sane",
+			"data": [86, 88, 81, 87, 78, 84],
+			"image": "assets/img/prod/players/sane.png"
+		},
+		{
+			"name": "A. Witsel",
+			"identy": "witsel",
+			"data": [85, 78, 71, 78, 82, 75],
+			"image": "assets/img/prod/players/witsel.png"
+		},
+		{
+			"name": "H. Kane",
+			"identy": "kane",
+			"data": [89, 80, 94, 90, 87, 93],
+			"image": "assets/img/prod/players/kane.png"
+		},
+		{
+			"name": "K. Mbappe",
+			"identy": "mbappe",
+			"data": [89, 91, 89, 83, 84, 89],
+			"image": "assets/img/prod/players/mbappe.png"
+		},
+		{
+			"name": "G. Jesus",
+			"identy": "jesus",
+			"data": [82, 86, 84, 78, 83, 86],
+			"image": "assets/img/prod/players/jesus.png"
+		},
+		{
+			"name": "S. Agüero",
+			"identy": "aguero",
+			"data": [89, 89, 93, 89, 79, 93],
+			"image": "assets/img/prod/players/aguero.png"
+		},
+		{
+			"name": "E. Cavani",
+			"identy": "cavani",
+			"data": [88, 79, 88, 88, 91, 93],
+			"image": "assets/img/prod/players/cavani.png"
+		},
+		{
+			"name": "A. Griezman",
+			"identy": "griezman",
+			"data": [89, 88, 89, 82, 87, 90],
+			"image": "assets/img/prod/players/griezman.png"
+		},
+		{
+			"name": "R. Falcao",
+			"identy": "falcao",
+			"data": [83, 74, 86, 78, 67, 90],
+			"image": "assets/img/prod/players/falcao.png"
+		}
+	]
+}

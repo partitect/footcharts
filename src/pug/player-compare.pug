@@ -1,0 +1,29 @@
+extends layouts/default
+block pageVars
+	- var page = "playerSkills"
+	- var pageTitle = "Player Skills"
+block content
+	.ui.equal.width.stackable.grid
+		.row
+			.sixteen.mobile.column
+				.ui.segment
+					.select-menu
+						.ui.fluid.search.selection.dropdown.pl1
+							input(type='hidden', name='player1')
+							i.dropdown.icon
+							.default.text Select Player
+							.menu
+						.ui.fluid.search.selection.dropdown.color
+							input(type='hidden', name='color')
+							i.dropdown.icon
+							.default.text Select Color
+							.menu
+						.ui.fluid.search.selection.dropdown.pl2
+							input(type='hidden', name='player2')
+							i.dropdown.icon
+							.default.text Select Player
+							.menu
+					#p_compare.chartli(style="height:980px")
+block extraScripts
+	+script('charts/_player-compare',true)
+

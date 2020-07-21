@@ -1,0 +1,556 @@
+{
+	"league": {
+			"premier_league": {
+					"season": "2018/19",
+					"team_count": "20",
+					"week": [
+							{
+									"matches": {
+											"id": "1",
+											"date": "Fri 10 Aug 2018",
+											"referee": "Andre Marriner",
+											"stadium": "Old Trafford, Manchester",
+											"att": " 74439",
+											"home_team": "Manchester Utd",
+											"away_team": "Leicester",
+											"half_time": "1-0",
+											"full_time": "2-1",
+											"line_ups":{
+													"home_team":[
+															{
+																	"player":"David De Gea"
+															},
+															{
+																	"player":"Victor Lindelöf"
+															},
+															{
+																	"player":"Eric Baily"
+															},
+															{
+																	"player":"Luke Shaw"
+															},
+															{
+																	"player":"Matteo Darmian"
+															},
+															{
+
+															}
+													]
+											},
+											"goals": {
+													"home_goals": [
+															{
+																	"min": "3",
+																	"player": "Paul Pogba",
+																	"kind": "Penalty",
+																	"assist":""
+															},
+															{
+																	"min":"83",
+																	"player":"Luke Shaw",
+																	"kind":"",
+																	"assist":"Juan Mata"
+															}
+													],
+													"away_goals":[
+															{
+																	"min":"90+2",
+																	"player":"Jamie Vardy",
+																	"kind":"",
+																	"assist":""
+															}
+													]
+											}
+									}
+							}
+					],
+					"teams": {
+							"tottenham": {
+									"logo": "./assets/img/prod/teams/tottenham.svg",
+									"general_stats": {
+											"matches_played": "30",
+											"wins": "20",
+											"loses": "9",
+											"goals": "57",
+											"goals_conceded": "32",
+											"clean_sheets": "10"
+									},
+									"attack_stats": {
+											"goals": "57",
+											"goals_per_match": "1.90",
+											"shots": "403",
+											"shots_on_target": "151",
+											"shooting_accuracy": "37",
+											"penalties_scored": "4",
+											"big_chances_created": "53",
+											"hit_woodwork": "10"
+									},
+									"team_play_stats": {
+											"passes": "16372",
+											"passes_per_match": "557.73",
+											"passes_accuracy": "83",
+											"crosses": "526",
+											"cross_accuracy": "26"
+									},
+									"defence_stats": {
+											"clean_sheets": "10",
+											"goals_conceded": "32",
+											"goals_conceded_per_match": "1.07",
+											"saves": "95",
+											"tackles": "480",
+											"tackle_success": "59",
+											"blocked_shoots": "97",
+											"interceptions": "267",
+											"clearances": "333",
+											"head_clearances": "1966",
+											"error_leading_to_goal": "5",
+											"own_goals": "2"
+									},
+									"dicipline_stats": {
+											"yellow_cards": "44",
+											"red_cards": "1",
+											"fouls": "183",
+											"offsides": "57"
+									},
+									"players": [
+											{
+													"id": "1",
+													"name": "Lloris",
+													"position": "Goalkeeper",
+													"nationality": "France",
+													"date_of_birth": "26/12/1986",
+													"height": "188",
+													"weight": "82",
+													"value": "43.5",
+													"status": "Key Player",
+													"contrat": "30/6/2022",
+													"pre_foot": "Left Only",
+													"image": "./assets/img/prod/teams/tottenham/Lloris.png",
+													"player_ability": {
+															"general_abilities": {
+																	"overall": "14",
+																	"goalkeeping": "12",
+																	"defending": "14",
+																	"technical": "7",
+																	"mental": "15",
+																	"physical": "14"
+															},
+															"goalkeeping_abilities": {
+																	"aerial_reach": "11",
+																	"command_of_area": "12",
+																	"communication": "14",
+																	"eccentricity": "12",
+																	"first_touch": "8",
+																	"handling": "17",
+																	"kicking": "11",
+																	"one_on_ones": "15",
+																	"passing": "8",
+																	"reflexes": "17",
+																	"rushing_out": "19",
+																	"tendency_to_push": "13",
+																	"throwing": "11"
+															},
+															"mental_abilities": {
+																	"agression": "15",
+																	"anticipation": "17",
+																	"bravery": "18",
+																	"composure": "7",
+																	"concentration": "18",
+																	"decisions": "14",
+																	"determination": "15",
+																	"flair": "6",
+																	"leadership": "15",
+																	"off_the_ball": "6",
+																	"positioning": "16",
+																	"teamwork": "15",
+																	"vision": "9",
+																	"work_rate": "16"
+															},
+															"physical": {
+																	"acceleration": "14",
+																	"agility": "17",
+																	"balance": "11",
+																	"jumping_reach": "13",
+																	"natural_fitness": "15",
+																	"pace": "12",
+																	"stamina": "15",
+																	"strength": "14"
+															}
+													},
+													"general_stats": {
+															"appearances": "26",
+															"clean_sheets": "9",
+															"wins": "18",
+															"loses": "7"
+													},
+													"goalkeeping_stats": {
+															"saves": "78",
+															"penalties_saved": "2",
+															"punches": "13",
+															"high_claims": "9",
+															"catches": "7",
+															"sweeper_clearances": "17",
+															"throw_outs": "130",
+															"goal_kicks": "195"
+													},
+													"defence_stats": {
+															"clean_sheets": "9",
+															"goals_conceded": "27",
+															"error_leading_to_goal": "0",
+															"own_goals": "0"
+													},
+													"dicipline_stats": {
+															"yellow_cards": "0",
+															"red_cards": "0",
+															"fouls": "0"
+													},
+													"team_play_stats": {
+															"goals": "0",
+															"assists": "0",
+															"passes": "844",
+															"passes_per_match": "32.46",
+															"accurate_long_bals": "185"
+													},
+													"data": [
+															5,
+															3,
+															2,
+															4,
+															1,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															2,
+															2,
+															1,
+															2,
+															3
+													]
+											},
+											{
+													"name": "Alderwield",
+													"url": "alderwield",
+													"image": "./assets/img/prod/teams/tottenham/alderwield.png",
+													"data": [
+															5,
+															3,
+															2,
+															4,
+															1,
+															3,
+															2,
+															4,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															5
+													]
+											},
+											{
+													"name": "Sanchez",
+													"url": "sanchez",
+													"image": "./assets/img/prod/teams/tottenham/sanchez.png",
+													"data": [
+															2,
+															4,
+															5,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															3,
+															2,
+															2,
+															5
+													]
+											},
+											{
+													"name": "Vertonghen",
+													"url": "vertonghen",
+													"image": "./assets/img/prod/teams/tottenham/vertonghen.png",
+													"data": [
+															5,
+															3,
+															2,
+															4,
+															1,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															2,
+															2,
+															1,
+															2,
+															3
+													]
+											},
+											{
+													"name": "Trippier",
+													"url": "trippier",
+													"image": "./assets/img/prod/teams/tottenham/trippier.png",
+													"data": [
+															2,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															3,
+															5,
+															2,
+															1,
+															6,
+															2,
+															2,
+															5
+													]
+											},
+											{
+													"name": "Wanyama",
+													"url": "wanyama",
+													"image": "./assets/img/prod/teams/tottenham/wanyama.png",
+													"data": [
+															2,
+															4,
+															5,
+															1,
+															3,
+															5,
+															1,
+															1,
+															1,
+															2,
+															1,
+															1,
+															1,
+															2,
+															1,
+															1,
+															3,
+															5,
+															2,
+															1,
+															3,
+															2,
+															2,
+															5
+													]
+											},
+											{
+													"name": "Sisokko",
+													"url": "sisokko",
+													"image": "./assets/img/prod/teams/tottenham/sisokko.png",
+													"data": [
+															2,
+															3,
+															6,
+															3,
+															1,
+															2,
+															4,
+															1,
+															2,
+															2,
+															1,
+															2,
+															1,
+															1,
+															3,
+															2,
+															1,
+															2,
+															4,
+															1,
+															2,
+															3,
+															1,
+															4
+													]
+											},
+											{
+													"name": "Son",
+													"url": "son",
+													"image": "./assets/img/prod/teams/tottenham/son.png",
+													"data": [
+															1,
+															2,
+															3,
+															5,
+															4,
+															6,
+															4,
+															5,
+															3,
+															1,
+															2,
+															5,
+															1,
+															1,
+															2,
+															1,
+															1,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															1
+													]
+											},
+											{
+													"name": "Eriksen",
+													"url": "eriksen",
+													"image": "./assets/img/prod/teams/tottenham/eriksen.png",
+													"data": [
+															5,
+															3,
+															5,
+															4,
+															5,
+															3,
+															2,
+															1,
+															5,
+															4,
+															6,
+															3,
+															3,
+															2,
+															4,
+															2,
+															4,
+															5,
+															2,
+															4,
+															5,
+															6,
+															5,
+															7
+													]
+											},
+											{
+													"name": "Rose",
+													"url": "rose",
+													"image": "./assets/img/prod/teams/tottenham/rose.png",
+													"data": [
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0,
+															1,
+															2,
+															3,
+															6,
+															3,
+															5,
+															4,
+															7,
+															3,
+															2,
+															2,
+															0
+													]
+											},
+											{
+													"name": "Kane",
+													"url": "kane",
+													"image": "./assets/img/prod/teams/tottenham/kane.png",
+													"data": [
+															0,
+															0,
+															0,
+															0,
+															0,
+															2,
+															3,
+															1,
+															5,
+															2,
+															1,
+															7,
+															6,
+															4,
+															2,
+															4,
+															2,
+															3,
+															0,
+															0,
+															0,
+															0,
+															0,
+															0
+													]
+											}
+									]
+							}
+					}
+			}
+	}
+}

@@ -1,0 +1,29 @@
+extends layouts/default
+block pageVars
+	- var page = "playerSkills"
+	- var pageTitle = "Player Skills"
+block content
+	.ui.equal.width.stackable.grid
+		.row
+			.sixteen.mobile.column
+				.ui.segment
+					.select-menu
+						.ui.fluid.search.selection.dropdown.team1
+							input(type='hidden', name='team1')
+							i.dropdown.icon
+							.default.text Select Team
+							.menu
+						.ui.fluid.search.selection.dropdown.color
+							input(type='hidden', name='color')
+							i.dropdown.icon
+							.default.text Select Color
+							.menu
+						.ui.fluid.search.selection.dropdown.team2
+							input(type='hidden', name='team2')
+							i.dropdown.icon
+							.default.text Select Team
+							.menu
+					#team_compare.chartli(style="height:720px")
+block extraScripts
+	+script('charts/_team-compare',true)
+

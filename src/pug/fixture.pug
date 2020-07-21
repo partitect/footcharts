@@ -1,0 +1,32 @@
+extends layouts/default
+block pageVars
+	- var page = "playerSkills"
+	- var pageTitle = "Player Skills"
+block content
+	.ui.stackable.grid
+		.stretched.row
+			.three.wide.column
+				.ui.segment
+					.ui.form
+						.field
+							.ui.search.selection.dropdown.chart-dd.league-dd
+								input(type='hidden')
+								i.dropdown.icon
+								input.search(type='text')
+								.default.text Select League
+								.menu
+						.field
+							.ui.search.selection.dropdown.chart-dd.week-dd
+								input(type='hidden')
+								i.dropdown.icon
+								input.search(type='text')
+								.default.text Select Week
+								.menu
+			.thirteen.wide.column
+				.ui.segment
+					#fixture(class="chartli",style="height:720px;width:100%")
+block extraScripts
+	+vendorscript('moment','moment/min',true)
+	+vendorscript('echarts-liquidfill','echarts-liquidfill/dist',true)
+	+script('charts/_fixture',true)
+

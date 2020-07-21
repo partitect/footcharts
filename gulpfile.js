@@ -231,7 +231,7 @@ gulp.task('script', () => {
 
 gulp.task('script:vendors', () => {
 	let stream = gulp
-		.src(`${src.scriptsVendors}/*.js`)
+		.src(`${src.scriptsVendors}/**/*.js`)
 		.pipe($.include())
 		.pipe(
 			$.babel({

@@ -43,21 +43,15 @@ html(lang=siteLanguage)
 		include ../partials/includes/_meta-tags
 		include ../partials/includes/_styles
 	body
-
-		//- - if (page !== 'login' && page !== 'register' && page !== 'forgot-password'  && page !== '404') {
-		//- 	include header
-		//- 	include sidebar
-		//- - }
-
-		include ../partials/_header
-
+		if(page=='index')
+			include ../partials/_header
 		+line
 		+line
 
 		+line
 		+line
 		.page-body-wrapper
-			if(page!=='index')
+			//--if(page!=='index')
 				include ../partials/_sidebar
 			.main-content
 				include ../partials/_navbar
@@ -66,9 +60,9 @@ html(lang=siteLanguage)
 
 		+line
 		+line
-
-		include ../partials/_footer
-
+		if(page=='index')
+			include ../partials/_footer
+		include ../partials/_copyright
 		+line
 		+line
 
@@ -77,3 +71,4 @@ html(lang=siteLanguage)
 		//- - }
 
 		include ../partials/includes/_scripts
+		block extraScripts
