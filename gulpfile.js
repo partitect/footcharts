@@ -331,7 +331,7 @@ gulp.task('fonts', function() {
 gulp.task('docs', function() {
 	// mainBowerFiles is used as a src for the task, usually you pipe stuff through
 	// a task
-	return gulp.src(`${src.docs}/**/*`).pipe(gulp.dest(dist.dataPackages));
+	return gulp.src(`${src.docs}/**/*`).pipe(gulp.dest(dist.docsPackages));
 });
 // datas
 

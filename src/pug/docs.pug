@@ -1,0 +1,14 @@
+extends layouts/default
+block pageVars
+	- var page = "playerSkills"
+	- var pageTitle = "Player Skills"
+	block extraStyles
+		link(href="http://unpkg.com/docsify/themes/vue.css")
+block content
+	.ui.equal.width.stackable.grid
+		.row
+			.column
+				.ui.basic.segment.center.aligned
+block extraScripts
+	script(src="https://unpkg.com/docsify@4.9.4/lib/docsify.min.js")
+
