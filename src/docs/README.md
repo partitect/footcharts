@@ -2,11 +2,27 @@
 
 > Interactive Football Charts and Graphics
 
+> [!NOTE]
+> Footcharts is "Echarts" based graphics and charts. It used datas with json. Datas are not real, many of them data write manually. If you buy this plugin, can be set your custom data with json.
+
+## Features
+	💰 Easy and Simple
+	⚡️️ Flashy and Useful
+	🔥 Powerfull chart scripts
+	💯 Built with JS,CSS,JQuery,Echarts,Fomantic-Ui
+	🤖 Support by YELLOWRED TEAM
+	🚀 Developable and Customizable
+
+> [!TIP]
+> Can be used with local json files or remote json url
+
 ![Cover Image](../assets/img/sample/ex-1.png)
 
-    Footcharts is "Echarts" based graphics and charts. It used datas with json. Datas are not real, many of them data write manually. If you buy this plugin, can be set your custom data with json.
 
-    Sample data set is shown below for "Player Compare"
+
+> [!NOTE]
+> Sample data set is shown below for "Player Compare"
+
 
 ```json
 {
