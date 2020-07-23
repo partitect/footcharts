@@ -1,0 +1,80 @@
+body {
+	font-size: 1rem;
+	font-family: 'Exo 2', sans-serif !important;
+}
+
+nav.app-nav li ul {
+	min-width: 100px;
+}
+
+.sidebar ul li a {
+	white-space: pre-line;
+	padding-right: 0.5em;
+}
+
+.markdown-section code {
+	font-size: inherit;
+}
+
+.markdown-section pre > code {
+	white-space: pre-wrap;
+}
+
+pre:after {
+	padding: 1em;
+	right: 0.5em;
+}
+
+.markdown-section ol,
+.markdown-section ul {
+	margin: 0;
+}
+section.cover {
+	padding-top: 280px;
+	padding-bottom: 150px;
+}
+section.cover .cover-main > p:last-child a {
+	background: #171b22;
+	color: #fff !important;
+	border: 0;
+}
+
+section.cover .cover-main > p:last-child a:last-child {
+	background: #171b22;
+}
+
+.anchor span {
+	color: #403f4c;
+}
+
+section.cover p {
+	color: #403f4c;
+}
+.cover-image-wrapper {
+	position: relative;
+	width: 50%;
+	height: 350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cover-image-wrapper img {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	text-align: center;
+	left: 50%;
+}
+.cover-image-wrapper img:first-child {
+	transform: rotate(-5deg);
+}
+.cover-image-wrapper img:nth-child(2) {
+	transform: rotate(5deg);
+}
+.sidebar img {
+	height: 100px;
+}
+.previewImage {
+	border-radius: 5px;
+}

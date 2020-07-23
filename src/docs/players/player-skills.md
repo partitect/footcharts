@@ -1,5 +1,45 @@
 # Player Skills
 
+
+
+![logo](../../assets/img/sample/ex-8.png ':size=100% :class=previewImage')
+
+
+
+> First of all create html div element
+
+````html
+<div id="skillsGraph" style="width:100%;height:580px"></div>
+````
+
+````javascript
+var skillChart = echarts.init(document.getElementById("skillsGraph"), null, {
+	renderer: "canvas"
+});
+$.get("./assets/data/player-skills.json", function(data) {
+	skillChart.hideLoading();
+	var option: {
+					title: [
+							{
+								text: datas.Name,
+								textStyle: {
+									fontSize: 120,
+									color: datas.textColor,
+									fontWeight: "bold"
+								},
+								x: "20",
+								top: "20"
+							}
+							],
+							...chart configrations
+						}
+	skillChart.setOption(option);
+}
+````
+
+> [!TIP|style:flat|label:Sample Json Data]
+> Sample json data must be like this for player-skills.
+
 ```json
 {
    "players":[
@@ -190,7 +230,8 @@
          "GKPositioning":14,
          "GKReflexes":11,
          "Release Clause":"€127.1M"
-      }
+		}
+		...More Objects
    ]
 }
 ```

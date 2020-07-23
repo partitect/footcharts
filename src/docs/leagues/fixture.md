@@ -1,5 +1,30 @@
 # Fixture
 
+![logo](../../assets/img/sample/ex-10.png ':size=100% :class=previewImage')
+
+
+
+> First of all create html div element
+
+````html
+<div id="fixtureGraph" style="width:100%;height:580px"></div>
+````
+
+````javascript
+var fixtureChart = echarts.init(document.getElementById("fixtureGraph"), null, {
+	renderer: "canvas"
+});
+$.get("./assets/data/premier-league/weeks.json", function(data) {
+	fixtureChart.hideLoading();
+	var option: {...chart configrations}
+	fixtureChart.setOption(option);
+}
+````
+
+> [!TIP|style:flat|label:Sample Json Data]
+> Sample json data must be like this for fixture.
+
+
 ````json
 {
 	"RECORDS": [

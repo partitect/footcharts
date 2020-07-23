@@ -11,4 +11,5 @@
 * [▶ Leagues](#)
 	* [⚽ Fixture](/leagues/fixture)
 	* [⚽ League Table](/leagues/league-table)
+* [⚽ Credits](/credits)
 * [⚽ Changelog](/changelog)

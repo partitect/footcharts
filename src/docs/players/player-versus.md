@@ -1,5 +1,30 @@
 # Player Versus
 
+
+![logo](../../assets/img/sample/ex-4.png ':size=100% :class=previewImage')
+
+
+
+> First of all create html div element
+
+````html
+<div id="versusGraph" style="width:100%;height:580px"></div>
+````
+
+````javascript
+var versusChart = echarts.init(document.getElementById("versusGraph"), null, {
+	renderer: "canvas"
+});
+$.get("./assets/data/player-versus.json", function(data) {
+	versusChart.hideLoading();
+	var option: {...chart configrations}
+	versusChart.setOption(option);
+}
+````
+
+> [!TIP|style:flat|label:Sample Json Data]
+> Sample json data must be like this for player-versus.
+
 ```json
 {
 	"dataNames": [

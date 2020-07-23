@@ -1,5 +1,29 @@
 # Player Compare
 
+![logo](../../assets/img/sample/ex-6.png ':size=100% :class=previewImage')
+
+
+
+> First of all create html div element
+
+````html
+<div id="compareGraph" style="width:100%;height:580px"></div>
+````
+
+````javascript
+var compareChart = echarts.init(document.getElementById("compareGraph"), null, {
+	renderer: "canvas"
+});
+$.get("./assets/data/player-compare.json", function(data) {
+	compareChart.hideLoading();
+	var option: {...chart configrations}
+	compareChart.setOption(option);
+}
+````
+
+> [!TIP|style:flat|label:Sample Json Data]
+> Sample json data must be like this for player-compare.
+
 ```json
 {
    "dataNames":[

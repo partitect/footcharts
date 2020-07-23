@@ -1,5 +1,29 @@
 # Team Passes
 
+![logo](../../assets/img/sample/ex-19.png ':size=100% :class=previewImage')
+
+
+
+> First of all create html div element
+
+````html
+<div id="teamsPassesGraph" style="width:100%;height:580px"></div>
+````
+
+````javascript
+var teamsPassesChart = echarts.init(document.getElementById("teamsPassesGraph"), null, {
+	renderer: "canvas"
+});
+$.get("./assets/data/team-passes.json", function(data) {
+	teamsPassesChart.hideLoading();
+	var option: {...chart configrations}
+	teamsPassesChart.setOption(option);
+}
+````
+
+> [!TIP|style:flat|label:Sample Json Data]
+> Sample json data must be like this for player-teamsPasses.
+
 ````json
 {
    "league":{

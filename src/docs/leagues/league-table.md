@@ -1,5 +1,30 @@
 # League Table
 
+![logo](../../assets/img/sample/ex-12.png ':size=100% :class=previewImage')
+
+
+
+> First of all create html div element
+
+````html
+<div id="leagueTableGraph" style="width:100%;height:580px"></div>
+````
+
+````javascript
+var leagueTableChart = echarts.init(document.getElementById("leagueTableGraph"), null, {
+	renderer: "canvas"
+});
+$.get("./assets/data/premier-league/table.json", function(data) {
+	leagueTableChart.hideLoading();
+	var option: {...chart configrations}
+	leagueTableChart.setOption(option);
+}
+````
+
+> [!TIP|style:flat|label:Sample Json Data]
+> Sample json data must be like this for leagueTable.
+
+
 ````json
 {
     "name":"Premier League",
@@ -97,126 +122,8 @@
                 "league_position":11,"previous_position":0,"next_play":"","lp":[
                     "D"
                 ]
-            },
-            {
-                "name":"Arsenal",
-                "logo":"arsenal",
-                "color1":"rgba(219,0,7,1)",
-                "color2":"rgba(156,130,74,1)",
-                "play":1,
-                "win":1,
-                "draw":0,
-                "lost":0,
-                "gf":1,
-                "ga":0,
-                "gd":1,
-                "pts":3,
-                "league_position":11,"previous_position":0,"next_play":"","lp":[
-                    "W"
-                ]
-            },
-            {
-                "name":"West Ham United",
-                "logo":"westham-united",
-                "color1":"rgba(122,38,58,1)",
-                "color2":"rgba(27,177,231,1)",
-                "play":1,
-                "win":0,
-                "draw":0,
-                "lost":1,
-                "gf":0,
-                "ga":5,
-                "gd":-5,
-                "pts":0,
-                "league_position":11,"previous_position":0,"next_play":"","lp":[
-                    "L"
-                ]
-            },
-            {
-                "name":"Tottenham",
-                "logo":"tottenham",
-                "color1":"rgba(19,34,87,1)",
-                "color2":"rgba(255,255,255,1)",
-                "play":1,
-                "win":1,
-                "draw":0,
-                "lost":0,
-                "gf":3,
-                "ga":0,
-                "gd":3,
-                "pts":3,
-                "league_position":11,"previous_position":0,"next_play":"","lp":[
-                    "W"
-                ]
-            },
-            {
-                "name":"Chelsea",
-                "logo":"chelsea",
-                "color1":"rgba(3, 70, 148,1)",
-                "color2":"rgba(238, 36, 44,1)",
-                "play":1,
-                "win":0,
-                "draw":0,
-                "lost":1,
-                "gf":0,
-                "ga":4,
-                "gd":-4,
-                "pts":0,
-                "league_position":11,"previous_position":0,"next_play":"","lp":[
-                    "L"
-                ]
-            },
-            {
-                "name":"Bournemouth",
-                "logo":"bournemouth",
-                "color1":"rgba(218,41,28,1)",
-                "color2":"rgba(0,0,0,1)",
-                "play":1,
-                "win":0,
-                "draw":1,
-                "lost":0,
-                "gf":1,
-                "ga":1,
-                "gd":0,
-                "pts":1,
-                "league_position":11,"previous_position":0,"next_play":"","lp":[
-                    "D"
-                ]
-            },
-            {
-                "name":"Crystal Palace",
-                "logo":"crystal-palace",
-                "color1":"rgba(27, 69, 143,1)",
-                "color2":"rgba(196, 18, 46,1)",
-                "play":1,
-                "win":0,
-                "draw":1,
-                "lost":0,
-                "gf":0,
-                "ga":0,
-                "gd":0,
-                "pts":1,
-                "league_position":11,"previous_position":0,"next_play":"","lp":[
-                    "D"
-                ]
-            },
-            {
-                "name":"Manchester United",
-                "logo":"manchester-united",
-                "color1":"rgba(218,41,8,1)",
-                "color2":"rgba(251,225,34,1)",
-                "play":1,
-                "win":1,
-                "draw":0,
-                "lost":0,
-                "gf":4,
-                "ga":0,
-                "gd":4,
-                "pts":3,
-                "league_position":11,"previous_position":0,"next_play":"","lp":[
-                    "W"
-                ]
-            }
+			},
+			...More Objects
         ]
     }
 }
