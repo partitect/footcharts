@@ -6,22 +6,22 @@ block content
 	.ui.grid.container.stackable
 		.row
 			.column
-				.ui.three.stackable.cards
-					each cardList in [{image:'ex-1',title:'Passes Map',desc:'Single Player Passes Direction Map'},{image:'ex-2',title:'Passes Map',desc:'Single Player Passes Direction Map'},{image:'ex-18',title:'Passes Map',desc:'Single Player Passes Direction Map'}]
+				.ui.two.stackable.cards
+					each cardList in [{image:'2',title:'Passes Map',desc:'Single Player Passes Direction Map'},{image:'3',title:'Passes Map',desc:'Single Player Passes Direction Map'}]
 						.card
 							.blurring.dimmable.image
 								.ui.inverted.dimmer
 									.content
 										.center
 											a.ui.positive.button Browse
-								img(src='assets/img/sample/'+cardList.image+'.png')
+								img(src='assets/img/sample/player-passes-example-'+cardList.image+'.png')
 							.content
 								a.header #{cardList.title}
 								.description #{cardList.desc}
 		.row
 			.column
-				.ui.three.stackable.cards
-					each cardList in [{image:'ex-4',title:'Passes Map',desc:'Single Player Passes Direction Map'},{image:'ex-5',title:'Passes Map',desc:'Single Player Passes Direction Map'},{image:'ex-6',title:'Passes Map',desc:'Single Player Passes Direction Map'}]
+				.ui.two.stackable.cards
+					each cardList in [{image:'ex-4',title:'Passes Map',desc:'Single Player Passes Direction Map'},{image:'ex-5',title:'Passes Map',desc:'Single Player Passes Direction Map'}]
 						.card
 							.image
 								img(src='assets/img/sample/'+cardList.image+'.png')
@@ -40,8 +40,8 @@ block content
 								.description #{cardList.desc}
 		.row
 			.column
-				.ui.three.stackable.cards
-					each cardList in [{image:'ex-10',title:'Passes Map',desc:'Single Player Passes Direction Map'},{image:'ex-11',title:'Passes Map',desc:'Single Player Passes Direction Map'},{image:'ex-12',title:'Passes Map',desc:'Single Player Passes Direction Map'}]
+				.ui.two.stackable.cards
+					each cardList in [{image:'ex-10',title:'Passes Map',desc:'Single Player Passes Direction Map'},{image:'ex-11',title:'Passes Map',desc:'Single Player Passes Direction Map'}]
 						.card
 							.image
 								img(src='assets/img/sample/'+cardList.image+'.png')
