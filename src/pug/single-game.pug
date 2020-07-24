@@ -1,0 +1,13 @@
+extends layouts/default
+block pageVars
+	- var page = "playerSkills"
+	- var pageTitle = "Player Skills"
+block content
+	.ui.stackable.grid
+		.row
+			.column
+				h3(style="text-align:center;margin-bottom:10px") This page is experimental
+				#singleGame(class="chartli",style="height:1580px;width:100%")
+block extraScripts
+	+script('charts/_single-game',true)
+
