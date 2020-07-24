@@ -43,7 +43,7 @@ const pkg = require('./package.json');
 const isThemeforestTheme = false;
 
 // if production mode is active. -> false: developement mode
-const isProduction = false;
+const isProduction = true;
 
 // if minified file included in production
 const minifiedFileInclude = true;
@@ -57,7 +57,7 @@ const src = {
 	stylesVendors: `${srcRoot}/sass/vendors`,
 	scripts: `${srcRoot}/js`,
 	scriptsVendors: `${srcRoot}/js/vendors`,
-	images: `${srcRoot}/img`,
+	images: isThemeforestTheme ? `${srcRoot}/envato-img` : `${srcRoot}/img`,
 	fonts: `${srcRoot}/fonts`,
 	data: `${srcRoot}/data`,
 	docs: `${srcRoot}/docs`
@@ -270,51 +270,28 @@ gulp.task('scripts', gulp.series('script', 'script:vendors'));
 
 gulp.task('images', () => {
 	let stream;
-	if (isThemeforestTheme) {
-		stream = gulp
-			.src(!isProduction ? `${src.images}/sample/**/*` : `${src.images}/prod/**/*`)
-			.pipe($.newer(!isProduction ? `${dist.images}/sample` : `${dist.images}`))
-			.pipe(
-				$.imagemin([
-					$.imagemin.gifsicle({ interlaced: true }),
-					$.imagemin.jpegtran({ progressive: true }),
-					$.imagemin.optipng({ optimizationLevel: 5 }),
-					$.imagemin.svgo({
-						plugins: [
-							{
-								removeViewBox: false
-							},
-							{
-								cleanupIDs: false
-							}
-						]
-					})
-				])
-			)
-			.pipe(gulp.dest(!isProduction ? `${dist.images}/sample` : `${dist.images}`));
-	} else {
-		stream = gulp
-			.src(`${src.images}/**/*`)
-			.pipe($.newer(`${dist.images}`))
-			.pipe(
-				$.imagemin([
-					$.imagemin.gifsicle({ interlaced: true }),
-					$.imagemin.jpegtran({ progressive: true }),
-					$.imagemin.optipng({ optimizationLevel: 5 }),
-					$.imagemin.svgo({
-						plugins: [
-							{
-								removeViewBox: false
-							},
-							{
-								cleanupIDs: false
-							}
-						]
-					})
-				])
-			)
-			.pipe(gulp.dest(`${dist.images}`));
-	}
+	stream = gulp
+		.src(`${src.images}/**/*`)
+		.pipe($.newer(`${dist.images}`))
+		.pipe(
+			$.imagemin([
+				$.imagemin.gifsicle({ interlaced: true }),
+				$.imagemin.jpegtran({ progressive: true }),
+				$.imagemin.optipng({ optimizationLevel: 5 }),
+				$.imagemin.svgo({
+					plugins: [
+						{
+							removeViewBox: false
+						},
+						{
+							cleanupIDs: false
+						}
+					]
+				})
+			])
+		)
+		.pipe(gulp.dest(`${dist.images}`));
+
 	stream = stream.pipe(reloadStream({ stream: true }));
 	return stream;
 });

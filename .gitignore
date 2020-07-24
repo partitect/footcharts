@@ -6,4 +6,4 @@ package-*.json
 dist
 .DS_Store
 *.zip
-themeforest-starter-template-v1.0.0
+footcharts-v1.0.0
