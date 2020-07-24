@@ -19,55 +19,55 @@
 			"name": "L. Sane",
 			"identy": "sane",
 			"data": [86, 88, 81, 87, 78, 84],
-			"image": "assets/img/prod/players/sane.png"
+			"image": "assets/img/players/sane.png"
 		},
 		{
 			"name": "A. Witsel",
 			"identy": "witsel",
 			"data": [85, 78, 71, 78, 82, 75],
-			"image": "assets/img/prod/players/witsel.png"
+			"image": "assets/img/players/witsel.png"
 		},
 		{
 			"name": "H. Kane",
 			"identy": "kane",
 			"data": [89, 80, 94, 90, 87, 93],
-			"image": "assets/img/prod/players/kane.png"
+			"image": "assets/img/players/kane.png"
 		},
 		{
 			"name": "K. Mbappe",
 			"identy": "mbappe",
 			"data": [89, 91, 89, 83, 84, 89],
-			"image": "assets/img/prod/players/mbappe.png"
+			"image": "assets/img/players/mbappe.png"
 		},
 		{
 			"name": "G. Jesus",
 			"identy": "jesus",
 			"data": [82, 86, 84, 78, 83, 86],
-			"image": "assets/img/prod/players/jesus.png"
+			"image": "assets/img/players/jesus.png"
 		},
 		{
 			"name": "S. Agüero",
 			"identy": "aguero",
 			"data": [89, 89, 93, 89, 79, 93],
-			"image": "assets/img/prod/players/aguero.png"
+			"image": "assets/img/players/aguero.png"
 		},
 		{
 			"name": "E. Cavani",
 			"identy": "cavani",
 			"data": [88, 79, 88, 88, 91, 93],
-			"image": "assets/img/prod/players/cavani.png"
+			"image": "assets/img/players/cavani.png"
 		},
 		{
 			"name": "A. Griezman",
 			"identy": "griezman",
 			"data": [89, 88, 89, 82, 87, 90],
-			"image": "assets/img/prod/players/griezman.png"
+			"image": "assets/img/players/griezman.png"
 		},
 		{
 			"name": "R. Falcao",
 			"identy": "falcao",
 			"data": [83, 74, 86, 78, 67, 90],
-			"image": "assets/img/prod/players/falcao.png"
+			"image": "assets/img/players/falcao.png"
 		}
 	]
 }

@@ -1,6 +1,6 @@
 # Team Passes
 
-![logo](../../assets/img/sample/ex-19.png ':size=100% :class=previewImage')
+![logo](../../assets/img/chart-images/ex-19.png ':size=100% :class=previewImage')
 
 
 
@@ -93,7 +93,7 @@ $.get("./assets/data/team-passes.json", function(data) {
          ],
          "teams":{
             "tottenham":{
-               "logo":"./assets/img/prod/teams/tottenham.svg",
+               "logo":"./assets/img/leagues/premier-league/team-logo/tottenham.png",
                "general_stats":{
                   "matches_played":"30",
                   "wins":"20",
@@ -152,7 +152,7 @@ $.get("./assets/data/team-passes.json", function(data) {
                      "status":"Key Player",
                      "contrat":"30/6/2022",
                      "pre_foot":"Left Only",
-                     "image":"./assets/img/prod/teams/tottenham/Lloris.png",
+                     "image":"./assets/img/teams/tottenham/Lloris.png",
                      "player_ability":{
                         "general_abilities":{
                            "overall":"14",
@@ -268,7 +268,7 @@ $.get("./assets/data/team-passes.json", function(data) {
                   {
                      "name":"Alderwield",
                      "url":"alderwield",
-                     "image":"./assets/img/prod/teams/tottenham/alderwield.png",
+                     "image":"./assets/img/teams/tottenham/alderwield.png",
                      "data":[
                         5,
                         3,
@@ -299,7 +299,7 @@ $.get("./assets/data/team-passes.json", function(data) {
                   {
                      "name":"Sanchez",
                      "url":"sanchez",
-                     "image":"./assets/img/prod/teams/tottenham/sanchez.png",
+                     "image":"./assets/img/teams/tottenham/sanchez.png",
                      "data":[
                         2,
                         4,
@@ -330,7 +330,7 @@ $.get("./assets/data/team-passes.json", function(data) {
                   {
                      "name":"Vertonghen",
                      "url":"vertonghen",
-                     "image":"./assets/img/prod/teams/tottenham/vertonghen.png",
+                     "image":"./assets/img/teams/tottenham/vertonghen.png",
                      "data":[
                         5,
                         3,
@@ -361,7 +361,7 @@ $.get("./assets/data/team-passes.json", function(data) {
                   {
                      "name":"Trippier",
                      "url":"trippier",
-                     "image":"./assets/img/prod/teams/tottenham/trippier.png",
+                     "image":"./assets/img/teams/tottenham/trippier.png",
                      "data":[
                         2,
                         0,
@@ -392,7 +392,7 @@ $.get("./assets/data/team-passes.json", function(data) {
                   {
                      "name":"Wanyama",
                      "url":"wanyama",
-                     "image":"./assets/img/prod/teams/tottenham/wanyama.png",
+                     "image":"./assets/img/teams/tottenham/wanyama.png",
                      "data":[
                         2,
                         4,
@@ -423,7 +423,7 @@ $.get("./assets/data/team-passes.json", function(data) {
                   {
                      "name":"Sisokko",
                      "url":"sisokko",
-                     "image":"./assets/img/prod/teams/tottenham/sisokko.png",
+                     "image":"./assets/img/teams/tottenham/sisokko.png",
                      "data":[
                         2,
                         3,
@@ -454,7 +454,7 @@ $.get("./assets/data/team-passes.json", function(data) {
                   {
                      "name":"Son",
                      "url":"son",
-                     "image":"./assets/img/prod/teams/tottenham/son.png",
+                     "image":"./assets/img/teams/tottenham/son.png",
                      "data":[
                         1,
                         2,
@@ -485,7 +485,7 @@ $.get("./assets/data/team-passes.json", function(data) {
                   {
                      "name":"Eriksen",
                      "url":"eriksen",
-                     "image":"./assets/img/prod/teams/tottenham/eriksen.png",
+                     "image":"./assets/img/teams/tottenham/eriksen.png",
                      "data":[
                         5,
                         3,
@@ -516,7 +516,7 @@ $.get("./assets/data/team-passes.json", function(data) {
                   {
                      "name":"Rose",
                      "url":"rose",
-                     "image":"./assets/img/prod/teams/tottenham/rose.png",
+                     "image":"./assets/img/teams/tottenham/rose.png",
                      "data":[
                         0,
                         0,
@@ -547,7 +547,7 @@ $.get("./assets/data/team-passes.json", function(data) {
                   {
                      "name":"Kane",
                      "url":"kane",
-                     "image":"./assets/img/prod/teams/tottenham/kane.png",
+                     "image":"./assets/img/teams/tottenham/kane.png",
                      "data":[
                         0,
                         0,

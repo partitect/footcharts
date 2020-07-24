@@ -1,9 +1,7 @@
 var myChart = echarts.init(document.getElementById("table"), null, {
   renderer: "canvas"
 });
-//https://apiv2.apifootball.com/?action=get_standings&league_id=511&APIkey=640e07f6d6da99ee0a7d098abbb9b1ae087dbd61280138cab7c2f123ebcd191a
-//https://apiv2.apifootball.com/?action=get_teams&league_id=511&APIkey=640e07f6d6da99ee0a7d098abbb9b1ae087dbd61280138cab7c2f123ebcd191a
-//https://apiv2.apifootball.com/?action=get_events&from=2019-10-05&to=2019-10-06&league_id=151&APIkey=640e07f6d6da99ee0a7d098abbb9b1ae087dbd61280138cab7c2f123ebcd191a
+
 
 //Set Starting Parameters
 myChart.showLoading();
@@ -26,7 +24,7 @@ $(".table-segment").css(
   "background",
   "rgba(" + localStorage.getItem("chartColor") + ",1)"
 );
-var SaveIcon = "./assets/img/prod/saveas.svg";
+var SaveIcon = "./assets/img/template-images/screenshot.svg";
 //League Select Function
 $(".ui.dropdown.league-select")
   .dropdown({
@@ -115,7 +113,7 @@ function GetTable(league, weeko, chartColor = "rgba(55, 0, 60,.6)") {
       weekMenu +=
         '<div class="item" data-value="' +
         i +
-        '"><img style="width:18px" src="./assets/img/prod/calendar.svg" class="ui avatar image"/>Week ' +
+        '"><img style="width:18px" src="./assets/img/template-images/calendar.svg" class="ui avatar image"/>Week ' +
         i.replace("week", "") +
         "</div>";
       $(".ui.dropdown.week-select").dropdown(
@@ -163,7 +161,7 @@ function GetTable(league, weeko, chartColor = "rgba(55, 0, 60,.6)") {
             start1: {
               backgroundColor: {
                 image:
-                  "./assets/data/" +
+                  "./assets/img/leagues/" +
                   league +
                   "/team-logo/" +
                   sorted[i].logo +
@@ -176,12 +174,12 @@ function GetTable(league, weeko, chartColor = "rgba(55, 0, 60,.6)") {
             },
             up: {
               backgroundColor: {
-                image: "./assets/img/prod/up.svg"
+                image: "./assets/img/template-images/up.svg"
               }
             },
             down: {
               backgroundColor: {
-                image: "./assets/img/prod/down.svg"
+                image: "./assets/img/template-images/down.svg"
               }
             },
             black: {
@@ -242,21 +240,21 @@ function GetTable(league, weeko, chartColor = "rgba(55, 0, 60,.6)") {
           rich: {
             up: {
               backgroundColor: {
-                image: "./assets/img/prod/up.svg"
+                image: "./assets/img/template-images/up.svg"
               },
               width: 15,
               height: 15
             },
             down: {
               backgroundColor: {
-                image: "./assets/img/prod/down.svg"
+                image: "./assets/img/template-images/down.svg"
               },
               width: 15,
               height: 15
             },
             fixed: {
               backgroundColor: {
-                image: "./assets/img/prod/eq.svg"
+                image: "./assets/img/template-images/eq.svg"
               },
               width: 12,
               height: 12
@@ -333,21 +331,21 @@ function GetTable(league, weeko, chartColor = "rgba(55, 0, 60,.6)") {
           rich: {
             win: {
               backgroundColor: {
-                image: "./assets/img/prod/win1.svg"
+                image: "./assets/img/template-images/win1.svg"
               },
               width: 20,
               height: 20
             },
             draw: {
               backgroundColor: {
-                image: "./assets/img/prod/draw1.svg"
+                image: "./assets/img/template-images/draw1.svg"
               },
               width: 20,
               height: 20
             },
             lost: {
               backgroundColor: {
-                image: "./assets/img/prod/lost1.svg"
+                image: "./assets/img/template-images/lost1.svg"
               },
               width: 20,
               height: 20
@@ -415,7 +413,7 @@ function GetTable(league, weeko, chartColor = "rgba(55, 0, 60,.6)") {
             win: {
               backgroundColor: {
                 image:
-                  "./assets/data/" +
+                  "./assets/img/leagues/" +
                   league +
                   "/team-logo/" +
                   sorted[i].next_play.logo +

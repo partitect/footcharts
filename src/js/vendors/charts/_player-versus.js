@@ -15,7 +15,7 @@ if (localStorage.getItem("pvColor") === null) {
 	localStorage.setItem("pvColor", "#3BB273");
 }
 
-var SaveIcon = "./assets/img/prod/saveas.svg";
+var SaveIcon = "./assets/img/template-images/screenshot.svg";
 GetVersus(
 	localStorage.getItem("player1"),
 	localStorage.getItem("player2"),

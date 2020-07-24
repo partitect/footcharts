@@ -1,6 +1,6 @@
 # Player Compare
 
-![logo](../../assets/img/sample/ex-6.png ':size=100% :class=previewImage')
+![logo](../../assets/img/chart-images/ex-6.png ':size=100% :class=previewImage')
 
 
 

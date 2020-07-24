@@ -1,6 +1,6 @@
 # League Table
 
-![logo](../../assets/img/sample/ex-12.png ':size=100% :class=previewImage')
+![logo](../../assets/img/chart-images/ex-12.png ':size=100% :class=previewImage')
 
 
 

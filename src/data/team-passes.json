@@ -66,7 +66,7 @@
 					],
 					"teams": {
 							"tottenham": {
-									"logo": "./assets/img/prod/teams/tottenham.svg",
+									"logo": "./assets/img/leagues/premier-league/team-logo/tottenham.png",
 									"general_stats": {
 											"matches_played": "30",
 											"wins": "20",
@@ -125,7 +125,7 @@
 													"status": "Key Player",
 													"contrat": "30/6/2022",
 													"pre_foot": "Left Only",
-													"image": "./assets/img/prod/teams/tottenham/Lloris.png",
+													"image": "./assets/img/teams/tottenham/Lloris.png",
 													"player_ability": {
 															"general_abilities": {
 																	"overall": "14",
@@ -241,7 +241,7 @@
 											{
 													"name": "Alderwield",
 													"url": "alderwield",
-													"image": "./assets/img/prod/teams/tottenham/alderwield.png",
+													"image": "./assets/img/teams/tottenham/alderwield.png",
 													"data": [
 															5,
 															3,
@@ -272,7 +272,7 @@
 											{
 													"name": "Sanchez",
 													"url": "sanchez",
-													"image": "./assets/img/prod/teams/tottenham/sanchez.png",
+													"image": "./assets/img/teams/tottenham/sanchez.png",
 													"data": [
 															2,
 															4,
@@ -303,7 +303,7 @@
 											{
 													"name": "Vertonghen",
 													"url": "vertonghen",
-													"image": "./assets/img/prod/teams/tottenham/vertonghen.png",
+													"image": "./assets/img/teams/tottenham/vertonghen.png",
 													"data": [
 															5,
 															3,
@@ -334,7 +334,7 @@
 											{
 													"name": "Trippier",
 													"url": "trippier",
-													"image": "./assets/img/prod/teams/tottenham/trippier.png",
+													"image": "./assets/img/teams/tottenham/trippier.png",
 													"data": [
 															2,
 															0,
@@ -365,7 +365,7 @@
 											{
 													"name": "Wanyama",
 													"url": "wanyama",
-													"image": "./assets/img/prod/teams/tottenham/wanyama.png",
+													"image": "./assets/img/teams/tottenham/wanyama.png",
 													"data": [
 															2,
 															4,
@@ -396,7 +396,7 @@
 											{
 													"name": "Sisokko",
 													"url": "sisokko",
-													"image": "./assets/img/prod/teams/tottenham/sisokko.png",
+													"image": "./assets/img/teams/tottenham/sisokko.png",
 													"data": [
 															2,
 															3,
@@ -427,7 +427,7 @@
 											{
 													"name": "Son",
 													"url": "son",
-													"image": "./assets/img/prod/teams/tottenham/son.png",
+													"image": "./assets/img/teams/tottenham/son.png",
 													"data": [
 															1,
 															2,
@@ -458,7 +458,7 @@
 											{
 													"name": "Eriksen",
 													"url": "eriksen",
-													"image": "./assets/img/prod/teams/tottenham/eriksen.png",
+													"image": "./assets/img/teams/tottenham/eriksen.png",
 													"data": [
 															5,
 															3,
@@ -489,7 +489,7 @@
 											{
 													"name": "Rose",
 													"url": "rose",
-													"image": "./assets/img/prod/teams/tottenham/rose.png",
+													"image": "./assets/img/teams/tottenham/rose.png",
 													"data": [
 															0,
 															0,
@@ -520,7 +520,7 @@
 											{
 													"name": "Kane",
 													"url": "kane",
-													"image": "./assets/img/prod/teams/tottenham/kane.png",
+													"image": "./assets/img/teams/tottenham/kane.png",
 													"data": [
 															0,
 															0,

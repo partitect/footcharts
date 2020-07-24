@@ -2,7 +2,7 @@
 
 
 
-![logo](../../assets/img/sample/ex-8.png ':size=100% :class=previewImage')
+![logo](../../assets/img/chart-images/ex-8.png ':size=100% :class=previewImage')
 
 
 
@@ -52,12 +52,12 @@ $.get("./assets/data/player-skills.json", function(data) {
          "textColor":"#EDBC00",
          "Name":"L. Messi",
          "Age":31,
-         "Photo":"assets/img/prod/players/messi.png",
+         "Photo":"assets/img/players/messi.png",
          "Nationality":"Argentina",
          "Overall":94,
          "Potential":94,
          "Club":"FC Barcelona",
-         "Club_Logo":"assets/img/teams/barca.svg",
+         "Club_Logo":"assets/img/leagues/laliga/team-logo/barcelona.png",
          "Value":"€110.5M",
          "Wage":"€565K",
          "Special":2202,
@@ -146,12 +146,12 @@ $.get("./assets/data/player-skills.json", function(data) {
          "textColor":"#FFCF00",
          "Name":"C. Ronaldo",
          "Age":33,
-         "Photo":"assets/img/prod/players/ronaldo.png",
+         "Photo":"assets/img/players/ronaldo.png",
          "Nationality":"Portugal",
          "Overall":94,
          "Potential":94,
          "Club":"Juventus",
-         "Club_Logo":"assets/img/teams/juve.svg",
+         "Club_Logo":"assets/img/leagues/serie-a/team-logo/juventus.png",
          "Value":"€77M",
          "Wage":"€405K",
          "Special":2228,

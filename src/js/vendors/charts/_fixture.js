@@ -10,7 +10,7 @@ if (localStorage.getItem("fixtureWeek") === null) {
 if (localStorage.getItem("LeagueName") === null) {
 	localStorage.setItem("LeagueName", "Premier League");
 }
-var SaveIcon = "./assets/img/prod/saveas.svg";
+var SaveIcon = "./assets/img/template-images/screenshot.svg";
 
 const curveness = 0.2;
 
@@ -144,7 +144,7 @@ function GetFixtures(weeko, leaguePath, leagueName) {
 						logo: {
 							backgroundColor: {
 								image:
-									"./assets/data/" +
+									"./assets/img/leagues/" +
 									leaguePath +
 									"/team-logo/" +
 									weekInfo.t1logo +
@@ -198,7 +198,7 @@ function GetFixtures(weeko, leaguePath, leagueName) {
 						logo: {
 							backgroundColor: {
 								image:
-									"./assets/data/" +
+									"./assets/img/leagues/" +
 									leaguePath +
 									"/team-logo/" +
 									weekInfo.t1logo +
@@ -252,7 +252,7 @@ function GetFixtures(weeko, leaguePath, leagueName) {
 						logo: {
 							backgroundColor: {
 								image:
-									"./assets/data/" +
+									"./assets/img/leagues/" +
 									leaguePath +
 									"/team-logo/" +
 									weekInfo.t2logo +

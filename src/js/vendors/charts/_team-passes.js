@@ -34,7 +34,7 @@ $.ajax({
 		chartliexample3.setOption({
 			// Fill with texture
 			color: {
-				image: './assets/img/forward-triangle.png', // HTMLImageElement, and HTMLCanvasElement are supported, while string path is not supported
+				image: './assets/img/template-images/forward-triangle.png', // HTMLImageElement, and HTMLCanvasElement are supported, while string path is not supported
 				repeat: 'repeat' // whether to repeat texture, whose value can be repeat-x, repeat-y, or no-repeat
 			},
 			toolbox: {
@@ -55,7 +55,7 @@ $.ajax({
 					bounding: 'raw',
 					origin: [0, 0],
 					style: {
-						image: './assets/img/footbal-pitch.svg',
+						image: './assets/img/template-images/footbal-pitch.svg',
 						width: wdt,
 						height: 2100
 					}

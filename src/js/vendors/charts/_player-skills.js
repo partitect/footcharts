@@ -60,7 +60,7 @@ $.get("./assets/data/player-skills.json", function(data) {
 	$(".pagination-button").css("color", datas.textColor);
 	playerImage = datas.Photo;
 	clubImage = datas.Club_Logo;
-	countryImage = "assets/img/prod/countries/" + datas.Nationality + ".svg";
+	countryImage = "assets/img/countries/" + datas.Nationality + ".png";
 
 	$(".pagination-button").on("click", function() {
 		if ($(this).hasClass("right-button")) {
@@ -112,7 +112,7 @@ $.get("./assets/data/player-skills.json", function(data) {
 		$(".pagination-button").css("color", datas.textColor);
 		playerImage = datas.Photo;
 		clubImage = datas.Club_Logo;
-		countryImage = "assets/img/prod/countries/" + datas.Nationality + ".svg";
+		countryImage = "assets/img/countries/" + datas.Nationality + ".png";
 		var changeOption = {
 			baseOption: {
 				lazyUpdate: true,

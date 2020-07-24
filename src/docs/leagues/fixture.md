@@ -1,6 +1,6 @@
 # Fixture
 
-![logo](../../assets/img/sample/ex-10.png ':size=100% :class=previewImage')
+![logo](../../assets/img/chart-images/ex-10.png ':size=100% :class=previewImage')
 
 
 

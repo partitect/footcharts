@@ -1,6 +1,6 @@
 # Team Compare
 
-![logo](../../assets/img/sample/ex-20.png ':size=100% :class=previewImage')
+![logo](../../assets/img/chart-images/ex-20.png ':size=100% :class=previewImage')
 
 
 

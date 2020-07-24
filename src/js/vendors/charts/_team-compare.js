@@ -53,7 +53,7 @@ GetPlayers(
 	localStorage.getItem("ts2"),
 	localStorage.getItem("color")
 );
-var SaveIcon = "./assets/img/prod/saveas.svg";
+var SaveIcon = "./assets/img/template-images/screenshot.svg";
 function GetPlayers(pl1, pl2, clr) {
 	$.get("./assets/data/teams-compare.json", function(response) {
 		var newDatas = [];
@@ -141,8 +141,8 @@ function GetPlayers(pl1, pl2, clr) {
 			_league_name: "Premier League"
 		};
 
-		var uploadedDataURL3 = "./assets/img/prod/teams/" + pimg1 + ".svg";
-		var uploadedDataURL4 = "./assets/img/prod/teams/" + pimg2 + ".svg";
+		var uploadedDataURL3 = "./assets/img/leagues/premier-league/team-logo/"+pimg1+".png";
+		var uploadedDataURL4 = "./assets/img/leagues/premier-league/team-logo/"+pimg2+".png";
 		var zongjine = [0];
 		var players = [];
 		var myData = [];

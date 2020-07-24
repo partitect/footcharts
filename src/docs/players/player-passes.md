@@ -1,6 +1,6 @@
 # Player Passes
 
-![logo](../../assets/img/sample/ex-1.png ':size=100% :class=previewImage')
+![logo](../../assets/img/chart-images/ex-1.png ':size=100% :class=previewImage')
 
 
 

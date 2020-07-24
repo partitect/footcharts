@@ -9,7 +9,7 @@ if (localStorage.getItem("passesPlayer") === null) {
 if (localStorage.getItem("passesColor") === null) {
 	localStorage.setItem("passesColor", "#007236");
 }
-var SaveIcon = "./assets/img/prod/saveas.svg";
+var SaveIcon = "./assets/img/template-images/screenshot.svg";
 
 $(".pl1")
 	.dropdown({
@@ -36,10 +36,10 @@ GetPasses(
 
 function GetPasses(pl1, clr) {
 	$.get("./assets/data/player-passes.json", function(data) {
-		var forward_triangle = "./assets/img/prod/forward-triangle.png";
-		var right_triangle = "./assets/img/prod/right-triangle.png";
-		var back_triangle = "./assets/img/prod/back-triangle.png";
-		var left_triangle = "./assets/img/prod/left-triangle.png";
+		var forward_triangle = "./assets/img/template-images/forward-triangle.png";
+		var right_triangle = "./assets/img/template-images/right-triangle.png";
+		var back_triangle = "./assets/img/template-images/back-triangle.png";
+		var left_triangle = "./assets/img/template-images/left-triangle.png";
 
 		var p1Data = [];
 		var direction = ["RIGHT", "BACK", "LEFT", "FORWARD"];
@@ -75,7 +75,7 @@ function GetPasses(pl1, clr) {
 		$(".color .menu").html(colorItems);
 
 		var player_image =
-			"./assets/img/prod/footballers/" + p1Data[0].identy + ".png";
+			"./assets/img/footballers/" + p1Data[0].identy + ".png";
 		var option = {
 			baseOption: {
 				textStyle: {
