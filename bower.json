@@ -42,13 +42,6 @@
     "lightgallery": "lightGallery#^1.6.12",
     "echarts": "latest",
     "metisMenu": "^3.0.4",
-    "animsition": "^4.0.2",
-    "jquery.nicescroll": "nicescroll#^3.7.6",
-    "perfect-scrollbar": "latest",
-    "filterizr": "^2.2.3",
-    "list.js": "listjs#^1.5.0",
-    "bodymovin": "^5.5.9",
-    "noisejs": "*",
     "docsify": "^4.11.4",
     "moment": "momentjs#^2.24.0",
     "echarts-liquidfill": "https://github.com/ecomfe/echarts-liquidfill.git#^2.0.5",
@@ -80,17 +73,6 @@
       "main": [
         "./dist/metisMenu.min.css",
         "./dist/metisMenu.min.js"
-      ]
-    },
-    "perfect-scrollbar": {
-      "main": [
-        "./css/perfect-scrollbar.min.css",
-        "./js/perfect-scrollbar.min.js"
-      ]
-    },
-    "bodymovin": {
-      "main": [
-        "./build/player/lottie.min.js"
       ]
     },
     "moment": {

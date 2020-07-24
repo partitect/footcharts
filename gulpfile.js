@@ -40,7 +40,7 @@ gulp.src = function onError(...args) {
 const pkg = require('./package.json');
 
 // for themeforest theme
-const isThemeforestTheme = true;
+const isThemeforestTheme = false;
 
 // if production mode is active. -> false: developement mode
 const isProduction = true;
