@@ -66,6 +66,42 @@ section.cover p {
 	text-align: center;
 	left: 50%;
 }
+
+@media (min-width: 1281px) {
+	.cover-image-wrapper {
+		height: 450px;
+	}
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+	.cover-image-wrapper {
+		height: 300px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+	.cover-image-wrapper {
+		height: 250px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+	.cover-image-wrapper {
+		height: 250px;
+	}
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+	.cover-image-wrapper {
+		height: 100px;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+	.cover-image-wrapper {
+		height: 100px;
+	}
+}
 .cover-image-wrapper img:first-child {
 	transform: rotate(-5deg);
 }

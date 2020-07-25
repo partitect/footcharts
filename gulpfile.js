@@ -43,7 +43,7 @@ const pkg = require('./package.json');
 const isThemeforestTheme = false;
 
 // if production mode is active. -> false: developement mode
-const isProduction = true;
+const isProduction = false;
 
 // if minified file included in production
 const minifiedFileInclude = true;

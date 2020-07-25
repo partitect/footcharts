@@ -1,1 +1,1 @@
-$('#menu1').metisMenu();
+$(".ui.accordion").accordion();

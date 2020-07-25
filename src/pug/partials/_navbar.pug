@@ -4,7 +4,7 @@ include ./includes/_menu
 		img(src=siteLogoUrl)
 		h4 FootCharts
 	a.toc.item.toggle-sidebar
-		i.icon.big.iconfont.icon-xitongcaidan
+		img(src="./assets/img/template-images/menu.svg")
 	each menu1 in menu
 		if (menu1.child.length == 0)
 			a.item.hover-item(href=""+menu1.link+"") #{menu1.text}
