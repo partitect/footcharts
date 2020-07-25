@@ -41,7 +41,6 @@
     "jquery": "^3.4.1",
     "lightgallery": "lightGallery#^1.6.12",
     "echarts": "latest",
-    "metisMenu": "^3.0.4",
     "docsify": "^4.11.4",
     "moment": "momentjs#^2.24.0",
     "echarts-liquidfill": "https://github.com/ecomfe/echarts-liquidfill.git#^2.0.5",
@@ -67,12 +66,6 @@
         "./dist/echarts-en.min.js",
         "./map/js/world.js",
         "./map/js/usa.js"
-      ]
-    },
-    "metisMenu": {
-      "main": [
-        "./dist/metisMenu.min.css",
-        "./dist/metisMenu.min.js"
       ]
     },
     "moment": {

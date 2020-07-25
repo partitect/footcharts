@@ -40,10 +40,10 @@ gulp.src = function onError(...args) {
 const pkg = require('./package.json');
 
 // for themeforest theme
-const isThemeforestTheme = false;
+const isThemeforestTheme = true;
 
 // if production mode is active. -> false: developement mode
-const isProduction = false;
+const isProduction = true;
 
 // if minified file included in production
 const minifiedFileInclude = true;
