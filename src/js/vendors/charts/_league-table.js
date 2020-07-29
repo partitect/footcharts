@@ -113,7 +113,7 @@ function GetTable(league, weeko, chartColor = "rgba(55, 0, 60,.6)") {
       weekMenu +=
         '<div class="item" data-value="' +
         i +
-        '"><img style="width:18px" src="./assets/img/template-images/calendar.svg" class="ui avatar image"/>Week ' +
+        '"><img src="./assets/img/template-images/calendar.svg" class="ui avatar image calendar-image"/>Week ' +
         i.replace("week", "") +
         "</div>";
       $(".ui.dropdown.week-select").dropdown(

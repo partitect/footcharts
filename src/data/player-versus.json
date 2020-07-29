@@ -7,13 +7,7 @@
 		{ "text": "Stamina", "max": 100 },
 		{ "text": "Positioning", "max": 100 }
 	],
-	"colors": [
-		{ "name": "Green", "value": "#3BB273" },
-		{ "name": "Blue", "value": "#4D9DE0" },
-		{ "name": "Orange", "value": "#E56B2D" },
-		{ "name": "Yellow", "value": "#E1BC29" },
-		{ "name": "Purple", "value": "#7768AE" }
-	],
+    "colors":[{"name":"Green","value":"#3BB273","class":"green-color"},{"name":"Blue","value":"#0B5563","class":"blue-color"},{"name":"Orange","value":"#E94F37","class":"orange-color"},{"name":"Purple","value":"#37003c","class":"purple-color"},{"name":"Red","value":"#db5461","class":"red-color"}],
 	"players": [
 		{
 			"name": "L. Sane",

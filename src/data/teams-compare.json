@@ -2,7 +2,7 @@
 	"dataNames": [
 		"Matches played", "Wins", "Losses", "Goals", "Clean sheets", "Goals per match", "Shots", "Shots on target", "Passes", "Pass accuracy %", "Yellow cards", "Red cards", "Penalties scored"
 	],
-    "colors":[{"name":"Green","value":"#3BB273"},{"name":"Blue","value":"#0B5563"},{"name":"Orange","value":"#E94F37"},{"name":"Purple","value":"#2F2235"},{"name":"Purple2","value":"#6B0E3E"}],
+    "colors":[{"name":"Green","value":"#3BB273","class":"green-color"},{"name":"Blue","value":"#0B5563","class":"blue-color"},{"name":"Orange","value":"#E94F37","class":"orange-color"},{"name":"Purple","value":"#37003c","class":"purple-color"},{"name":"Red","value":"#db5461","class":"red-color"}],
 	"players": [
 		{
 			"name": "Liverpool",

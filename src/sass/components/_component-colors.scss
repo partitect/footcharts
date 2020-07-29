@@ -1,0 +1,23 @@
+//Icon Colors
+i.icon{
+	&.circle{
+		&.green-color{
+			color:var(--green)
+		}
+				&.red-color{
+			color:var(--red)
+		}
+				&.purple-color{
+			color:var(--purple)
+		}
+				&.blue-color{
+			color:var(--blue)
+		}
+				&.orange-color{
+			color:var(--orange)
+		}
+				&.grey-color{
+			color:var(--grey)
+		}
+	}
+}
