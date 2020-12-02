@@ -1,0 +1,36 @@
+extends layouts/default
+block pageVars
+	- var page = "playerSkills"
+	- var pageTitle = "Player Skills"
+block content
+	.ui.equal.width.stackable.grid
+		.row
+			.sixteen.mobile.column
+				.ui.segment.attached(style="background:#171B22;padding:0")
+					.select-menu
+						.ui.search.selection.dropdown.pl1
+							input(type='hidden')
+							i.dropdown.icon
+							input.search(type='text')
+							.default.text Palmeiras
+							.menu
+						.ui.search.selection.dropdown.color
+							input(type='hidden', name='color')
+							i.dropdown.icon
+							.default.text Select Color
+							.menu
+						.ui.search.selection.dropdown.bg
+							input(type='hidden', name='bg')
+							i.dropdown.icon
+							.default.text Select Background
+							.menu
+						.ui.search.selection.dropdown.pl2
+							input(type='hidden')
+							i.dropdown.icon
+							input.search(type='text')
+							.default.text Corinthians
+							.menu
+					#versus.chartli(style="height:720px")
+block extraScripts
+	+script('charts/_versus',true)
+
