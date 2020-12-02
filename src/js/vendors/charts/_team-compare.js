@@ -89,8 +89,8 @@ function GetPlayers(pl1, pl2, clr) {
 			colorItems +=
 				'<div class="item" data-value="' +
 				response.colors[i].value +
-				'"><i class="icon circle" style="color:' +
-				response.colors[i].value +
+				'"><i class="icon circle ' +
+				response.colors[i].class +
 				'"></i>' +
 				response.colors[i].name +
 				"</div>";

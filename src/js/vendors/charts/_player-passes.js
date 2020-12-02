@@ -55,7 +55,7 @@ function GetPasses(pl1, clr) {
 			player1Names +=
 				'<div class="item" data-value="' +
 				data.players[i].identy +
-				'"><i class="icon circle" style="color:#2B81EE"></i>' +
+				'"><i class="icon circle"></i>' +
 				data.players[i].name +
 				"</div>";
 		}
@@ -65,8 +65,8 @@ function GetPasses(pl1, clr) {
 			colorItems +=
 				'<div class="item" data-value="' +
 				data.colors[i].value +
-				'"><i class="icon circle" style="color:' +
-				data.colors[i].value +
+				'"><i class="icon circle ' +
+				data.colors[i].class +
 				'"></i>' +
 				data.colors[i].name +
 				"</div>";

@@ -48,7 +48,7 @@ function GetVersus(pl1, pl2, clr) {
 				player1Names +=
 					'<div class="item" data-value="' +
 					data.players[i].identy +
-					'"><i class="icon circle" style="color:#2B81EE"></i>' +
+					'"><i class="icon circle '+clr+'"></i>' +
 					data.players[i].name +
 					"</div>";
 			}
@@ -60,7 +60,7 @@ function GetVersus(pl1, pl2, clr) {
 				player2Names +=
 					'<div class="item" data-value="' +
 					data.players[i].identy +
-					'"><i class="icon circle" style="color:#69C8A1"></i>' +
+					'"><i class="icon circle"></i>' +
 					data.players[i].name +
 					"</div>";
 			}
@@ -71,8 +71,8 @@ function GetVersus(pl1, pl2, clr) {
 			colorItems +=
 				'<div class="item" data-value="' +
 				data.colors[i].value +
-				'"><i class="icon circle" style="color:' +
-				data.colors[i].value +
+				'"><i class="icon circle ' +
+				data.colors[i].class +
 				'"></i>' +
 				data.colors[i].name +
 				"</div>";
