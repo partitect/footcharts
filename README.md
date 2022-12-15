@@ -21,6 +21,17 @@
 ![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-3.png)
 ![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-4.png)
 ![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-5.png)
+![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-6.png)
+![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-7.png)
+![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-8.png)
+![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-9.png)
+![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-10.png)
+![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-11.png)
+![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-12.png)
+![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-13.png)
+![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-14.png)
+![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-15.png)
+![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-16.png)
 
 
 
@@ -116,5 +127,3 @@
 	]
 }
 ```
-
-![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-6.png)
