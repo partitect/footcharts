@@ -17,6 +17,10 @@
 > Can be used with local json files or remote json url
 
 ![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-1.png)
+![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-2.png)
+![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-3.png)
+![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-4.png)
+![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-5.png)
 
 
 
