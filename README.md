@@ -32,6 +32,13 @@
 ![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-14.png)
 ![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-15.png)
 ![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-16.png)
+![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-17.png)
+![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-18.png)
+![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-19.png)
+![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-20.png)
+![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/player-passes-example-1.png)
+![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/player-passes-example-2.png)
+![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/player-passes-example-3.png)
 
 
 
