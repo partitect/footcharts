@@ -16,7 +16,7 @@
 > [!TIP]
 > Can be used with local json files or remote json url
 
-![Cover Image](../assets/img/chart-images/ex-1.png)
+![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-1.png)
 
 
 
@@ -113,4 +113,4 @@
 }
 ```
 
-![Cover Image](../assets/img/chart-images/ex-6.png)
+![Cover Image](https://raw.githubusercontent.com/partitect/footcharts/master/src/img/chart-images/ex-6.png)
